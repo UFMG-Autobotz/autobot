@@ -1,0 +1,50 @@
+% Exemplo de texto que o programa deve gerar
+% O nome do arquivo deve ser "membros.tex" e deve estar situado na pasta "dados"
+% -------------------------------------------------------------------------------------------------------------------
+
+\begin{membro}
+\nome{Daniel Leite}
+\tarefas{#STRING1}
+\planos{#STRING2}
+\comentarios{Comentários do jeito que foram escritos, sem modificação. Ele pode conter mais de um parágrafo.}
+\end{membro}
+
+\begin{membro}
+\nome{Rodrigo Cézar}
+\tarefas{#STRING1}
+\planos{#STRING2}
+\comentarios{Ok, eu menti: QUASE sem modificação. Aconselharia apenas, se possível, substituir os \n que possivelmente existirem no texto do comentário por \par, para que o LaTeX de fato inicie um novo parágrafo.}
+\end{membro}
+
+\begin{membro}
+\nome{Bianca Martins}
+\tarefas{#STRING1}
+\planos{#STRING2}
+\comentarios{}
+\end{membro}
+% -------------------------------------------------------------------------------------------------------------------
+
+% FORMATO DA #STRING1
+\hline      #tarefa1 & #hora1 & \multirow{#ntarefas}{*}{\centering #horas} \\
+\cline{1-2} #tarefa2 & #hora2 & \\
+\cline{1-2} #tarefa3 & #hora3 & \\
+\cline{1-2} #tarefa4 & #hora4 & \\
+\cline{1-2} #tarefa5 & #hora5 & \\
+\cline{1-2} #tarefa6 & #hora6 & \\
+
+% FORMATO DA #STRING2
+\item #plano1
+\item #plano2
+\item #plano3
+\item #plano3
+\item #plano4
+\item #plano5
+
+% Substituir #ntarefas pela quantidade total de tarefas da pessoa e #horas pelo total de horas cumpridas
+
+% Todas as quebras de linha nos formatos acima são opcionais, a string pode ser em uma linha só se preferir. Escrevi em várias linhas apenas para melhor visualização. Idem para o espaçamento após \hline na primeira linha de STRING1
+
+% Caso a pessoa não tenha preenchido algum dos campos e você queira explicitar isso, substitua #STRING1 por
+\hline \multicolumn{3}{c}{Não preenchido} \\
+% e #STRING 2 por simplesmente
+\item Não preenchido

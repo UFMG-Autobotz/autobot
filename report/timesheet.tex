@@ -1,0 +1,105 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,top=35mm,bottom=45mm,left=20mm,right=20mm]{geometry}
+\geometry{headheight=16mm,headsep=10mm,footskip=-30mm}
+
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage{fancyhdr}
+\usepackage{array,multirow}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{ifthen}
+
+\pagestyle{fancy}
+\setlength{\headheight}{4mm}
+\setlength\arrayrulewidth{.6pt}
+
+\rhead{\includegraphics{autobotz}}
+\cfoot{\includegraphics{macro}}
+\lhead{\sc \small Equipe de Robótica Autobotz \newline Universidade Federal de Minas Gerais \newline}
+\chead{}
+\rfoot{}
+\lfoot{}
+
+\graphicspath{{imagens/}}
+\input{dados/datas}
+
+\newenvironment{membro}{
+	\newcommand{\nome}[1]{\def \nome {##1}}	
+	\newcommand{\tarefas}[2]{\def \tarefa {##1} \def \horas {##2}}
+	\newcommand{\planos}[1]{\def \plano {##1}}
+	\newcommand{\comentarios}[1]{\def \comentario {##1}}
+}{
+\section*{\nome}~
+
+\textbf{Atividades realizadas nesta semana por \nome:}
+
+\ifthenelse{\horas=0}{~\par\emph{\quad Não preenchido\\}}{ %
+\begin{center}
+\begin{tabular}%
+{| m{.7\textwidth} | >{\centering\arraybackslash}m{3em} |}
+\hline
+ \rowcolor[RGB]{230,245,255}\centering \bf Atividades & \bf Horas \\
+\tarefa
+\hline \multicolumn{1}{r|}{Total:} & \cellcolor[RGB]{255,240,240} \horas \\
+\cline{2-2}
+\end{tabular}
+\end{center}
+}~
+
+\textbf{Atividades a serem realizadas na próxima semana:}
+
+\ifx\plano\empty~
+\par\emph{\quad Não preenchido\\}
+\else
+\begin{itemize}
+\plano
+\end{itemize}
+\fi~
+
+\textbf{Comentários:}
+
+\ifx\comentario\empty~
+\par\emph{\quad Não preenchido\\}
+\else
+\begin{quote}
+\comentario
+\end{quote}
+\fi
+\pagebreak
+}
+
+\begin{document}
+
+\begin{titlepage}
+\thispagestyle{fancy}
+
+~\vspace{20mm}
+
+\begin{center}
+\textbf{\huge Relatório Semanal de Atividades} \\[8mm]
+\textbf{\Large Semana \semana} \\
+{\Large \dataInicio\ a \dataFim}
+\end{center}
+
+\vfill
+\begin{figure}[h]
+\centering
+Horas por membro
+
+\includegraphics[height=.3\textheight]{grafico_barras}
+\end{figure}
+\vfill
+\begin{figure}[h]
+\centering
+Porcentagem das horas médias por membro
+
+\includegraphics[height=.3\textheight]{grafico_pizza}
+\end{figure}
+\vfill
+
+\end{titlepage}
+
+\input{dados/membros}
+
+\end{document}
