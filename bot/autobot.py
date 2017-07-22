@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #coding: utf-8
 
-import os, time, yaml, datetime
+import os, time, yaml, datetime, requests
 from general_utils import get_yaml_dict
 from slackclient import SlackClient
 
@@ -51,6 +51,7 @@ COMMAND.VIEW = "view"
 COMMAND.ADD_PLAN = "add_plan"
 COMMAND.COMMENT = "comment"
 COMMAND.HELP = "help"
+COMMAND.GET = "get"
 
 HELP = {
 	COMMAND.ADD: '*'+ COMMAND.ADD +'*: adiciona uma atividade ao timesheet. EX -> *timesheet add* _Tempo em horas_ : _Descrição_',
@@ -58,6 +59,7 @@ HELP = {
 	COMMAND.VIEW: '*'+ COMMAND.VIEW +'*: lista as atividades e comentário já registrados na semana. EX ->  *timesheet view*',
 	COMMAND.ADD_PLAN: '*'+ COMMAND.ADD_PLAN +'*: adiciona uma atividade planejada para a semana seguinte. EX ->  *timesheet add_plan* _Descrição_',
 	COMMAND.COMMENT: '*'+ COMMAND.COMMENT +'*: Inclui um comentário para o relatório. Atualmente, apenas um comentário por relatório semanal é arquivado, de modo que a adição de um novo comentário exclui o antigo. EX ->  *timesheet comment* _Comentário_',
+	COMMAND.GET: '*'+ COMMAND.GET +'*: compila e posta uma versão parcial do relatório da semana. Pode levar alguns segundos, uma vez que é necessário recompilar o .tex para gerar o relatório. EX ->  *timesheet get*'
 }
 
 PATH = '../timesheet/'
@@ -68,7 +70,9 @@ ATIVIDADES = 'atividades'
 COMMENTS = 'comments'
 PLANOS = 'planos'
 
-HELP_RESPONSE = 'Atualmente, eu sou apenas capaz de organizar o timesheet. Os seguintes comandos estão atualmente disponíveis:\n'+HELP[COMMAND.ADD]+'\n'+HELP[COMMAND.DELETE]+'\n'+HELP[COMMAND.VIEW]+'\n'+HELP[COMMAND.ADD_PLAN]+'\n'+HELP[COMMAND.COMMENT]+'\n'
+HELP_RESPONSE = 'Atualmente, eu sou apenas capaz de organizar o timesheet. Os seguintes comandos estão atualmente disponíveis:\n'
+for key in sorted(HELP.keys()):
+	HELP_RESPONSE += HELP[key]+'\n'
 
 # instantiate Slack & Twilio clients
 slack_client = SlackClient(os.environ.get('SLACK_BOT_TOKEN'))
@@ -82,6 +86,42 @@ def check_timesheet():
 		os.system("cp "+TIMESHEET_FILE+" "+new_TIMESHEET_FILE)
 		time.sleep(1)
 	TIMESHEET_FILE = new_TIMESHEET_FILE
+
+def upload_file(filepath, channels, filename=None, content=None, title=None, initial_comment=None):
+	"""Upload file to channel
+
+	Note:
+		URLs can be constructed from:
+		https://api.slack.com/methods/files.upload/test
+	"""
+
+	if filename is None:
+		filename = os.path.basename(filepath)
+
+	data = {}
+	data['token'] = os.environ.get('SLACK_BOT_TOKEN')
+	data['file'] = filepath
+	data['filename'] = filename
+	data['channels'] = channels
+
+	if content is not None:
+		data['content'] = content
+
+	if title is not None:
+		data['title'] = title
+
+	if initial_comment is not None:
+		data['initial_comment'] = initial_comment
+
+	# filepath = data['file']
+	files = { 'file': (filepath, open(filepath, 'rb'), '', { 'Expires': '0' }) }
+	data['media'] = files
+	response = requests.post(url='https://slack.com/api/files.upload', data=data, headers={'Accept': 'application/json'}, files=files)
+
+	return response.text
+
+def post_report(filepath, channels, title='Relatório semanal', com=None):
+	print upload_file(filepath=filepath, channels=channels, title=title, initial_comment=com)
 
 def handle_command(command, channel, user):
 	"""
