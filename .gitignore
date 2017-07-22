@@ -1,6 +1,4 @@
 report/timesheet.synctex.gz
 bot/get_ids.sh
-bot/
-info
-bot/
-run_autobot.sh
+bot/info
+bot/run_autobot.sh
