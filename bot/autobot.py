@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 #coding: utf-8
 
-import os, time, yaml, datetime, requests
+import os, time, yaml, datetime, requests, sys
 from general_utils import get_yaml_dict
+sys.path.append('./report')
+from latex_parser import generate_report
 from slackclient import SlackClient
 
 user_dict = {
@@ -46,23 +48,25 @@ COMMAND = var = lambda: None
 
 COMMAND.TIMESHEET = "timesheet"
 COMMAND.ADD = "add"
-COMMAND.DELETE = "delete"
-COMMAND.VIEW = "view"
 COMMAND.ADD_PLAN = "add_plan"
 COMMAND.COMMENT = "comment"
-COMMAND.HELP = "help"
+COMMAND.DELETE = "delete"
+COMMAND.EDIT = "edit"
 COMMAND.GET = "get"
+COMMAND.HELP = "help"
+COMMAND.VIEW = "view"
 
 HELP = {
-	COMMAND.ADD: '*'+ COMMAND.ADD +'*: adiciona uma atividade ao timesheet. EX -> *timesheet add* _Tempo em horas_ : _Descrição_',
-	COMMAND.DELETE: '*'+ COMMAND.DELETE +'*: remove uma atividade ao timesheet, de acordo com a numeração do comando view. EX-> *timesheet delete* _ID_',
-	COMMAND.VIEW: '*'+ COMMAND.VIEW +'*: lista as atividades e comentário já registrados na semana. EX ->  *timesheet view*',
-	COMMAND.ADD_PLAN: '*'+ COMMAND.ADD_PLAN +'*: adiciona uma atividade planejada para a semana seguinte. EX ->  *timesheet add_plan* _Descrição_',
-	COMMAND.COMMENT: '*'+ COMMAND.COMMENT +'*: Inclui um comentário para o relatório. Atualmente, apenas um comentário por relatório semanal é arquivado, de modo que a adição de um novo comentário exclui o antigo. EX ->  *timesheet comment* _Comentário_',
-	COMMAND.GET: '*'+ COMMAND.GET +'*: compila e posta uma versão parcial do relatório da semana. Pode levar alguns segundos, uma vez que é necessário recompilar o .tex para gerar o relatório. EX ->  *timesheet get*'
+	COMMAND.ADD: '*'+ COMMAND.ADD +'*: adiciona uma atividade ao timesheet. EX -> *timesheet add* _Tempo em horas_ : _Descrição_\n',
+	COMMAND.ADD_PLAN: '*'+ COMMAND.ADD_PLAN +'*: adiciona uma atividade planejada para a semana seguinte. EX ->  *timesheet add_plan* _Descrição_\n',
+	COMMAND.COMMENT: '*'+ COMMAND.COMMENT +'*: Inclui um comentário para o relatório. Atualmente, apenas um comentário por relatório semanal é arquivado, de modo que a adição de um novo comentário exclui o antigo. EX ->  *timesheet comment* _Comentário_\n',
+	COMMAND.DELETE: '*'+ COMMAND.DELETE +'*: remove uma atividade ao timesheet, de acordo com a numeração do comando view. EX-> *timesheet delete* _ID_\n',
+	COMMAND.EDIT: '*'+ COMMAND.EDIT +'*: edita a quantidade de horas de uma atividade no timesheet, de acordo com a numeração do comando view. EX-> *timesheet edit* _ID_ : _Tempo em horas_\n',
+	COMMAND.GET: '*'+ COMMAND.GET +'*: compila e posta uma versão parcial do relatório da semana. Pode levar alguns segundos, uma vez que é necessário recompilar o .tex para gerar o relatório. EX ->  *timesheet get*\n',
+	COMMAND.VIEW: '*'+ COMMAND.VIEW +'*: lista as atividades e comentário já registrados na semana. EX ->  *timesheet view*\n'
 }
 
-PATH = '../timesheet/'
+PATH = './timesheet/'
 TIMESHEET_PREFIX = PATH+'timesheet_'
 TIMESHEET_FILE = PATH+'timesheet.yaml'
 
@@ -132,6 +136,7 @@ def handle_command(command, channel, user):
 	timesheet_dict = get_yaml_dict(TIMESHEET_FILE)
 	user_list = timesheet_dict.keys()
 	response = "Não entendi o que quis dizer.\n" + HELP_RESPONSE
+	response_sent = False
 	print channel, command, user
 
 	erro = False
@@ -245,10 +250,46 @@ def handle_command(command, channel, user):
 			else:
 				response = 'O nome de usuário fornecido não foi reconhecido.'
 
+		elif command.lower().startswith(COMMAND.GET):
+			pdf_file = generate_report()
+			data = datetime.datetime.now()
+			semana_atual = data.isocalendar()[1]
+			post_report(pdf_file, channel, title='Relatório semana '+str(semana_atual), com=None)
+			response_sent = True
+
+		elif command.lower().startswith(COMMAND.EDIT):
+			command = command[len(COMMAND.EDIT):].strip()
+			
+			try:
+				ID = int(command.split(':')[0].strip())
+			except:
+				erro = True
+				response = 'ID inválido!'
+
+			command = command.split(':')[1].strip()
+
+			try:
+				hrs = float(command)
+			except:
+				erro = True
+				response = 'Número inválido de horas.'
+
+			if not erro:
+				if user_name in user_list:
+					try:
+						timesheet_dict[user_name][ATIVIDADES][ID-1][0] = hrs
+						response = 'A atividade '+ str(ID) +' foi editada!'
+					except:
+						erro = True
+						response = 'ID não encontrado.'
+				else:
+					response = 'O nome de usuário fornecido não foi reconhecido.'
+
 	with open(TIMESHEET_FILE, 'w') as f:
 		yaml.dump(timesheet_dict, f)
 		f.close()
-	slack_client.api_call("chat.postMessage", channel=channel, text=response, as_user=True)
+	if not response_sent:
+		slack_client.api_call("chat.postMessage", channel=channel, text=response, as_user=True)
 
 
 def parse_slack_output(slack_rtm_output):
@@ -271,6 +312,8 @@ def parse_slack_output(slack_rtm_output):
 	return None, None, None
 
 def main():
+	# print os.getcwd()
+	# exit()
 	READ_WEBSOCKET_DELAY = 1 # 1 second delay between reading from firehose
 	if slack_client.rtm_connect():
 		print "StarterBot connected and running!"

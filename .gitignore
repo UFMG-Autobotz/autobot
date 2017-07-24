@@ -3,3 +3,4 @@ report/general_utils.pyc
 bot/get_ids.sh
 bot/info
 bot/run_autobot.sh
+run_autobot.sh

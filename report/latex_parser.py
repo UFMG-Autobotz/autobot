@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 #coding: utf-8
 
-import datetime
-import os, yaml, io
+import datetime, os, yaml, io, time
 from general_utils import get_yaml_dict, set_new_var
 
 def get_comment(com):
@@ -72,8 +71,8 @@ def get_date():
 
 	return date_string, semana_atual
 
-def main():
-	PATH = '../timesheet/'
+def generate_report():
+	PATH = './timesheet/'
 	# WEEKS = 1
 
 	date_string, semana_atual = get_date()
@@ -84,27 +83,31 @@ def main():
 	print 'retrieving info from: ' + TIMESHEET_FILE
 	timesheet_dict = get_yaml_dict(TIMESHEET_FILE)
 
-	print date_string
-	print '\n'*3
+	# print date_string
+	# print '\n'*3
 
-	with open("dados/datas.tex", "w") as file:
-		# print>>file, date_string
+	with open("report/dados/datas.tex", "w") as file:
 		file.write(date_string)
 
-	with io.open("dados/membros.tex", "w", encoding='utf8') as file:
+	with io.open("report/dados/membros.tex", "w", encoding='utf8') as file:
 		for key in sorted(timesheet_dict.keys()):
 			membro_string = get_membro( set_new_var( timesheet_dict[key] ) )
-			print membro_string
-			print ''
-			# print>>file, membro_string
-			# print>>file, '\n'
+			# print membro_string
+			# print ''
 			file.write(membro_string)
 
-	os.system("cp timesheet.tex timesheet_"+str(semana_atual)+".tex")
-	os.system("pdflatex -interaction=nonstopmode timesheet_"+str(semana_atual)+".tex")
-	os.system("rm timesheet_"+str(semana_atual)+".tex")
+	os.system("cp report/timesheet.tex report/timesheet_"+str(semana_atual)+".tex")
+	os.system("pdflatex -interaction=nonstopmode report/timesheet_"+str(semana_atual)+".tex")
+	time.sleep(1)
+	os.system("rm report/timesheet_"+str(semana_atual)+".tex")
 	os.system("rm timesheet_"+str(semana_atual)+".aux")
 	os.system("rm timesheet_"+str(semana_atual)+".log")
+	os.system("mv timesheet_"+str(semana_atual)+".pdf "+PATH)
+
+	return PATH+"timesheet_"+str(semana_atual)+".pdf"
+
+def main():
+	print generate_report()
 
 if __name__  == "__main__":
 	main()
