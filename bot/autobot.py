@@ -316,14 +316,29 @@ def parse_slack_output(slack_rtm_output):
 				return output['text'].split(AT_BOT)[1].strip(), output['channel'], output['user']
 	return None, None, None
 
+def check_time():
+	data = datetime.datetime.now()
+	semana_atual = data.isocalendar()[1]
+	return data, semana_atual
+
 def main():
 	# print os.getcwd()
 	# exit()
+	init_time = check_time()
+	time_1 = check_time()
+	PULL_time = 60*60
+
 	READ_WEBSOCKET_DELAY = 1 # 1 second delay between reading from firehose
 	if slack_client.rtm_connect():
 		print "StarterBot connected and running!"
 		check_timesheet()
 		while True:
+			time_2 = check_time()
+			time_diff = time_2 - time_1
+			time_diff = time_diff.total_seconds()
+			if time_diff > PULL_time:
+				break
+
 			command, channel, user = parse_slack_output(slack_client.rtm_read())
 			if command and channel:
 				handle_command(command, channel, user)
