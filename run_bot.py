@@ -12,7 +12,7 @@ def main():
 	while True:
 		b = check_time()
 		c = b[0]-a[0]
-		if c.total_seconds() > 1:
+		if c.total_seconds() > 2:
 			a = check_time()
 			k = b[0]-init[0]
 			print k.total_seconds()
