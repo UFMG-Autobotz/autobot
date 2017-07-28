@@ -125,7 +125,8 @@ def upload_file(filepath, channels, filename=None, content=None, title=None, ini
 	return response.text
 
 def post_report(filepath, channels, title='Relatório semanal', com=None):
-	print upload_file(filepath=filepath, channels=channels, title=title, initial_comment=com)
+	# print upload_file(filepath=filepath, channels=channels, title=title, initial_comment=com)
+	upload_file(filepath=filepath, channels=channels, title=title, initial_comment=com)
 
 def handle_command(command, channel, user):
 	"""
@@ -137,7 +138,7 @@ def handle_command(command, channel, user):
 	user_list = timesheet_dict.keys()
 	response = "Não entendi o que quis dizer.\n" + HELP_RESPONSE
 	response_sent = False
-	print channel, command, user
+	# print channel, command, user
 
 	erro = False
 
@@ -150,141 +151,145 @@ def handle_command(command, channel, user):
 	elif command.lower().startswith(COMMAND.TIMESHEET):
 		command = command[len(COMMAND.TIMESHEET):].strip()
 
-		if command.lower().startswith(COMMAND.ADD_PLAN):
-			command = command[len(COMMAND.ADD_PLAN):].strip()
+		try:
 
-			plan = command
-			if user_name in user_list:
-				timesheet_dict[user_name][PLANOS].append(plan)
-				response = 'Sua atividade foi registrada, parabéns por se planejar com antecedência!'
-			else:
-				response = 'O nome de usuário fornecido não foi reconhecido.'
+			if command.lower().startswith(COMMAND.ADD_PLAN):
+				command = command[len(COMMAND.ADD_PLAN):].strip()
 
-		elif command.lower().startswith(COMMAND.ADD):
-			command = command[len(COMMAND.ADD):].strip()
-			
-			try:
-				hrs = float(command.split(':')[0].strip())
-			except:
-				erro = True
-				response = 'Número inválido de horas.'
-
-			command = command.split(':')[1].strip()
-
-			description =  command
-			# description =  command.split('-')[0].strip()
-			# comment = None
-			# if len(command.split('-')) > 1:
-			# 	comment = command.split('-')[1].strip()
-
-			if not erro:
+				plan = command
 				if user_name in user_list:
-					timesheet_dict[user_name][ATIVIDADES].append([hrs, description])
-					# timesheet_dict[user_name].append([hrs, description, comment])
-					response = 'Sua atividade foi registrada, continue o bom trabalho!'
+					timesheet_dict[user_name][PLANOS].append(plan)
+					response = 'Sua atividade foi registrada, parabéns por se planejar com antecedência!'
 				else:
 					response = 'O nome de usuário fornecido não foi reconhecido.'
 
-		elif command.lower().startswith(COMMAND.DELETE):
-			command = command[len(COMMAND.DELETE):].strip()
+			elif command.lower().startswith(COMMAND.ADD):
+				command = command[len(COMMAND.ADD):].strip()
+				
+				try:
+					hrs = float(command.split(':')[0].strip())
+				except:
+					erro = True
+					response = 'Número inválido de horas.'
 
-			try:
-				ID = int(command)
-			except:
-				erro = True
-				response = 'ID inválido!'
+				command = command.split(':')[1].strip()
 
-			if not erro:
-				if user_name in user_list:
-					try:
-						if ID <= len(timesheet_dict[user_name][ATIVIDADES]):
-							del timesheet_dict[user_name][ATIVIDADES][ID-1]
-							response = 'A atividade '+ str(ID) +' foi deletada!'
-						elif ID <= len(timesheet_dict[user_name][ATIVIDADES]) + len(timesheet_dict[user_name][PLANOS]):
-							del timesheet_dict[user_name][PLANOS][ID-1-len(timesheet_dict[user_name][ATIVIDADES])]
-							response = 'A atividade '+ str(ID) +' foi deletada!'
-						elif ID == len(timesheet_dict[user_name][ATIVIDADES]) + len(timesheet_dict[user_name][PLANOS]) + 1:
-							if timesheet_dict[user_name][COMMENTS]:
-								timesheet_dict[user_name][COMMENTS] = ''
+				description =  command
+				# description =  command.split('-')[0].strip()
+				# comment = None
+				# if len(command.split('-')) > 1:
+				# 	comment = command.split('-')[1].strip()
+
+				if not erro:
+					if user_name in user_list:
+						timesheet_dict[user_name][ATIVIDADES].append([hrs, description])
+						# timesheet_dict[user_name].append([hrs, description, comment])
+						response = 'Sua atividade foi registrada, continue o bom trabalho!'
+					else:
+						response = 'O nome de usuário fornecido não foi reconhecido.'
+
+			elif command.lower().startswith(COMMAND.DELETE):
+				command = command[len(COMMAND.DELETE):].strip()
+
+				try:
+					ID = int(command)
+				except:
+					erro = True
+					response = 'ID inválido!'
+
+				if not erro:
+					if user_name in user_list:
+						try:
+							if ID <= len(timesheet_dict[user_name][ATIVIDADES]):
+								del timesheet_dict[user_name][ATIVIDADES][ID-1]
 								response = 'A atividade '+ str(ID) +' foi deletada!'
+							elif ID <= len(timesheet_dict[user_name][ATIVIDADES]) + len(timesheet_dict[user_name][PLANOS]):
+								del timesheet_dict[user_name][PLANOS][ID-1-len(timesheet_dict[user_name][ATIVIDADES])]
+								response = 'A atividade '+ str(ID) +' foi deletada!'
+							elif ID == len(timesheet_dict[user_name][ATIVIDADES]) + len(timesheet_dict[user_name][PLANOS]) + 1:
+								if timesheet_dict[user_name][COMMENTS]:
+									timesheet_dict[user_name][COMMENTS] = ''
+									response = 'A atividade '+ str(ID) +' foi deletada!'
+								else:
+									response = 'ID não encontrado.'
 							else:
 								response = 'ID não encontrado.'
-						else:
+						except:
+							erro = True
 							response = 'ID não encontrado.'
-					except:
-						erro = True
-						response = 'ID não encontrado.'
-				else:
-					response = 'O nome de usuário fornecido não foi reconhecido.'
-			
+					else:
+						response = 'O nome de usuário fornecido não foi reconhecido.'
+				
 
-		elif command.lower().startswith(COMMAND.VIEW):
+			elif command.lower().startswith(COMMAND.VIEW):
 
-			if user_name in user_list:
-				ativ_list = timesheet_dict[user_name][ATIVIDADES]
-				plan_list = timesheet_dict[user_name][PLANOS]
-				com = timesheet_dict[user_name][COMMENTS]
-				response = '*Atividades da semana*\n\n'
-
-				for k, ativ in enumerate(ativ_list):
-					response+=str(k+1)+') '+str(ativ[0])+' hrs: '+ativ[1]+'\n\n'
-
-				response+='\n*Atividades planejadas*\n\n'
-				for k, plan in enumerate(plan_list):
-					response+=str(k+len(ativ_list)+1)+') '+plan+'\n\n'
-
-				response+='\n*Comentario*\n\n'
-				if timesheet_dict[user_name][COMMENTS]:
-					response+=str(len(ativ_list)+len(plan_list)+1)+') '+com+'\n\n'
-
-			else:
-				response = 'O nome de usuário fornecido não foi reconhecido.'
-
-		elif command.lower().startswith(COMMAND.COMMENT):
-			command = command[len(COMMAND.COMMENT):].strip()
-
-			com = command
-			if user_name in user_list:
-				timesheet_dict[user_name][COMMENTS] = com
-				response = 'Seu comentário foi registrado!'
-			else:
-				response = 'O nome de usuário fornecido não foi reconhecido.'
-
-		elif command.lower().startswith(COMMAND.GET):
-			pdf_file = generate_report()
-			data = datetime.datetime.now()
-			semana_atual = data.isocalendar()[1]
-			post_report(pdf_file, channel, title='Relatório semana '+str(semana_atual), com=None)
-			response_sent = True
-
-		elif command.lower().startswith(COMMAND.EDIT):
-			command = command[len(COMMAND.EDIT):].strip()
-			
-			try:
-				ID = int(command.split(':')[0].strip())
-			except:
-				erro = True
-				response = 'ID inválido!'
-
-			command = command.split(':')[1].strip()
-
-			try:
-				hrs = float(command)
-			except:
-				erro = True
-				response = 'Número inválido de horas.'
-
-			if not erro:
 				if user_name in user_list:
-					try:
-						timesheet_dict[user_name][ATIVIDADES][ID-1][0] = hrs
-						response = 'A atividade '+ str(ID) +' foi editada!'
-					except:
-						erro = True
-						response = 'ID não encontrado.'
+					ativ_list = timesheet_dict[user_name][ATIVIDADES]
+					plan_list = timesheet_dict[user_name][PLANOS]
+					com = timesheet_dict[user_name][COMMENTS]
+					response = '*Atividades da semana*\n\n'
+
+					for k, ativ in enumerate(ativ_list):
+						response+=str(k+1)+') '+str(ativ[0])+' hrs: '+ativ[1]+'\n\n'
+
+					response+='\n*Atividades planejadas*\n\n'
+					for k, plan in enumerate(plan_list):
+						response+=str(k+len(ativ_list)+1)+') '+plan+'\n\n'
+
+					response+='\n*Comentario*\n\n'
+					if timesheet_dict[user_name][COMMENTS]:
+						response+=str(len(ativ_list)+len(plan_list)+1)+') '+com+'\n\n'
+
 				else:
 					response = 'O nome de usuário fornecido não foi reconhecido.'
 
+			elif command.lower().startswith(COMMAND.COMMENT):
+				command = command[len(COMMAND.COMMENT):].strip()
+
+				com = command
+				if user_name in user_list:
+					timesheet_dict[user_name][COMMENTS] = com
+					response = 'Seu comentário foi registrado!'
+				else:
+					response = 'O nome de usuário fornecido não foi reconhecido.'
+
+			elif command.lower().startswith(COMMAND.GET):
+				pdf_file = generate_report()
+				data = datetime.datetime.now()
+				semana_atual = data.isocalendar()[1]
+				post_report(pdf_file, channel, title='Relatório semana '+str(semana_atual), com=None)
+				response_sent = True
+
+			elif command.lower().startswith(COMMAND.EDIT):
+				command = command[len(COMMAND.EDIT):].strip()
+				
+				try:
+					ID = int(command.split(':')[0].strip())
+				except:
+					erro = True
+					response = 'ID inválido!'
+
+				command = command.split(':')[1].strip()
+
+				try:
+					hrs = float(command)
+				except:
+					erro = True
+					response = 'Número inválido de horas.'
+
+				if not erro:
+					if user_name in user_list:
+						try:
+							timesheet_dict[user_name][ATIVIDADES][ID-1][0] = hrs
+							response = 'A atividade '+ str(ID) +' foi editada!'
+						except:
+							erro = True
+							response = 'ID não encontrado.'
+					else:
+						response = 'O nome de usuário fornecido não foi reconhecido.'
+
+		except:
+			pass
 	with open(TIMESHEET_FILE, 'w') as f:
 		yaml.dump(timesheet_dict, f)
 		f.close()

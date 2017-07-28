@@ -80,7 +80,7 @@ def generate_report():
 	TIMESHEET_PREFIX = 'timesheet_'
 
 	TIMESHEET_FILE = PATH + TIMESHEET_PREFIX + str(semana_atual) + '.yaml'
-	print 'retrieving info from: ' + TIMESHEET_FILE
+	# print 'retrieving info from: ' + TIMESHEET_FILE
 	timesheet_dict = get_yaml_dict(TIMESHEET_FILE)
 
 	# print date_string

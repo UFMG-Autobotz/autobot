@@ -13,7 +13,7 @@ def print_error_msg(msg):
 	print '\n'*3
 
 def get_dict_from_file(filename, handler):
-	print 'Using file', filename
+	# print 'Using file', filename
 	if os.path.isfile(filename):
 		with open(filename) as f:
 			dic = handler.load(f)
