@@ -39,9 +39,9 @@
 \begin{tabular}%
 {| m{.7\textwidth} | >{\centering\arraybackslash}m{3em} |}
 \hline
- \rowcolor[RGB]{230,245,255}\centering \bf Atividades & \bf Horas \\
+ \rowcolor[RGB]{245,245,245}\centering \bf Atividades & \bf Horas \\
 \tarefa
-\hline \multicolumn{1}{r|}{Total:} & \cellcolor[RGB]{255,240,240} \horas \\
+\hline \multicolumn{1}{r|}{Total:} & \cellcolor[RGB]{245,245,245} \bf \horas \\
 \cline{2-2}
 \end{tabular}
 \end{center}
@@ -71,7 +71,7 @@
 
 \begin{document}
 
-\begin{titlepage}
+%\begin{titlepage}
 \thispagestyle{fancy}
 
 ~\vspace{20mm}
@@ -82,6 +82,7 @@
 {\Large \dataInicio\ a \dataFim}
 \end{center}
 
+\iffalse
 \vfill
 \begin{figure}[h]
 \centering
@@ -99,6 +100,7 @@ Porcentagem das horas médias por membro
 \vfill
 
 \end{titlepage}
+\fi
 
 \input{report/dados/membros}
 
