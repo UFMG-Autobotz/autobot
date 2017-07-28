@@ -12,11 +12,11 @@ def main():
 	while True:
 		b = check_time()
 		c = b[0]-a[0]
-		if c.total_seconds() > 2:
+		if c.total_seconds() > 1:
 			a = check_time()
 			k = b[0]-init[0]
 			print k.total_seconds()
-			if k.total_seconds() > 10:
+			if k.total_seconds() > 15:
 				break
 
 if __name__ == "__main__":
