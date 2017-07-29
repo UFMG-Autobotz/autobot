@@ -334,7 +334,7 @@ def main():
 	rep = Repo('.')
 	# new_PULL = False
 	weekly_post = False
-	PULL_time = 30
+	PULL_time = 60
 
 	READ_WEBSOCKET_DELAY = 1 # 1 second delay between reading from firehose
 	if slack_client.rtm_connect():
