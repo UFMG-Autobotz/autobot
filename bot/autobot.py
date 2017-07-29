@@ -6,6 +6,7 @@ from general_utils import get_yaml_dict
 sys.path.append('./report')
 from latex_parser import generate_report
 from slackclient import SlackClient
+from git import Repo
 
 user_dict = {
 	'U5ALA8Y4V': 'admin',
@@ -322,22 +323,49 @@ def check_time():
 	return data, semana_atual
 
 def main():
-	# print os.getcwd()
-	# exit()
+	# # print os.getcwd()
+	# # exit()
 	init_time = check_time()
 	time_1 = check_time()
-	PULL_time = 60*60
+
+	WATCHED_FILES = ['bot/autobot.py', 'bot/general_utils.py', 'report/latex_parser.py']
+	WATCHED_FILES_MTIMES = [(f, os.path.getmtime(f)) for f in WATCHED_FILES]
+
+	rep = Repo('.')
+	new_PULL = False
+	weekly_post = False
 
 	READ_WEBSOCKET_DELAY = 1 # 1 second delay between reading from firehose
 	if slack_client.rtm_connect():
 		print "StarterBot connected and running!"
 		check_timesheet()
+
 		while True:
 			time_2 = check_time()
-			time_diff = time_2 - time_1
-			time_diff = time_diff.total_seconds()
-			if time_diff > PULL_time:
-				break
+			if time_2[1] != time_1[1]:
+				time_1 = check_time()
+				# postar relatório
+			# time_diff = time_2 - time_1
+			# time_diff = time_diff.total_seconds()
+			# if time_diff > PULL_time:
+			# 	break
+			commits_behind = rep.iter_commits('master..origin/master')
+			count_behind = sum(1 for c in commits_behind)
+
+			if count_behind > 0:
+				rep.git.pull()
+				new_PULL = True
+
+			if new_PULL:
+				new_PULL = False
+				# Check whether a watched file has changed.
+				for f, mtime in WATCHED_FILES_MTIMES:
+					if os.path.getmtime(f) != mtime:
+						# One of the files has changed, so restart the script.
+						# When running the script via './script.py', use
+						# os.execv(__file__, sys.argv)
+						# When running the script via 'python script.py', use
+						os.execv(sys.executable, ['python'] + sys.argv)
 
 			command, channel, user = parse_slack_output(slack_client.rtm_read())
 			if command and channel:
