@@ -43,10 +43,15 @@ def get_membro(info):
 	membro_string = membro_string.replace('#COMMENT', get_comment(info.comments) )
 	return membro_string
 
-def get_date():
+def get_date(target_week=None):
 	meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
 	data = datetime.datetime.now()
 	semana_atual = data.isocalendar()[1]
+
+	if target_week and semana_atual > target_week:
+		data = data-datetime.timedelta(weeks=semana_atual-target_week)
+		semana_atual = data.isocalendar()[1]
+
 	semana_init = data-datetime.timedelta(days=data.isocalendar()[2]-1)
 	semana_end = data+datetime.timedelta(days=7-data.isocalendar()[2])
 
@@ -57,12 +62,12 @@ def get_date():
 	date_string = '\\def \\semana {'+str(semana_atual)+'}\n'
 
 	if semana_init[2] != semana_end[2]:
-		date_string +='\\def \\dataInicio {'+str(semana_init[0])+' de '+meses[semana_init[1]]+' de '+str(semana_init[2])+'}'
+		date_string +='\\def \\dataInicio {'+str(semana_init[0])+' de '+meses[semana_init[1]-1]+' de '+str(semana_init[2])+'}'
 	elif semana_init[1] != semana_end[1]:
-		date_string +='\\def \\dataInicio {'+str(semana_init[0])+' de '+meses[semana_init[1]]+'}'
+		date_string +='\\def \\dataInicio {'+str(semana_init[0])+' de '+meses[semana_init[1]-1]+'}'
 	else:
 		date_string +='\\def \\dataInicio {'+str(semana_init[0])+'}'
-	date_string +='\n\\def \\dataFim {'+str(semana_end[0])+' de '+meses[semana_end[1]]+' de '+str(semana_end[2])+'}'
+	date_string +='\n\\def \\dataFim {'+str(semana_end[0])+' de '+meses[semana_end[1]-1]+' de '+str(semana_end[2])+'}'
 
 	# print data
 	# print semana_atual
@@ -71,11 +76,11 @@ def get_date():
 
 	return date_string, semana_atual
 
-def generate_report():
+def generate_report(target_week=None):
 	PATH = './timesheet/'
 	# WEEKS = 1
 
-	date_string, semana_atual = get_date()
+	date_string, semana_atual = get_date(target_week)
 
 	TIMESHEET_PREFIX = 'timesheet_'
 

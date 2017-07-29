@@ -82,6 +82,11 @@ for key in sorted(HELP.keys()):
 # instantiate Slack & Twilio clients
 slack_client = SlackClient(os.environ.get('SLACK_BOT_TOKEN'))
 
+def check_time():
+	data = datetime.datetime.now()
+	semana_atual = data.isocalendar()[1]
+	return data, semana_atual
+
 def check_timesheet():
 	data = datetime.datetime.now()
 	semana_atual = data.isocalendar()[1]
@@ -168,7 +173,7 @@ def handle_command(command, channel, user):
 				command = command[len(COMMAND.ADD):].strip()
 				
 				try:
-					hrs = float(command.split(':')[0].strip())
+					hrs = float(command.split(':')[0].strip().replace(',','.'))
 				except:
 					erro = True
 					response = 'Número inválido de horas.'
@@ -256,8 +261,7 @@ def handle_command(command, channel, user):
 
 			elif command.lower().startswith(COMMAND.GET):
 				pdf_file = generate_report()
-				data = datetime.datetime.now()
-				semana_atual = data.isocalendar()[1]
+				data, semana_atual = check_time()
 				post_report(pdf_file, channel, title='Relatório semana '+str(semana_atual), com=None)
 				response_sent = True
 
@@ -273,7 +277,7 @@ def handle_command(command, channel, user):
 				command = command.split(':')[1].strip()
 
 				try:
-					hrs = float(command)
+					hrs = float(command.replace(',','.'))
 				except:
 					erro = True
 					response = 'Número inválido de horas.'
@@ -317,11 +321,6 @@ def parse_slack_output(slack_rtm_output):
 				return output['text'].split(AT_BOT)[1].strip(), output['channel'], output['user']
 	return None, None, None
 
-def check_time():
-	data = datetime.datetime.now()
-	semana_atual = data.isocalendar()[1]
-	return data, semana_atual
-
 def main():
 	# # print os.getcwd()
 	# # exit()
@@ -333,6 +332,7 @@ def main():
 
 	rep = Repo('.')
 	weekly_post = False
+	POST_CHANNEL = '#relatórios'
 	PULL_time = 60
 
 	READ_WEBSOCKET_DELAY = 1 # 1 second delay between reading from firehose
@@ -341,13 +341,14 @@ def main():
 		check_timesheet()
 
 		while True:
-			time_2 = check_time()
+			current_time = check_time()
 
-			# if weekly_post and time_2[1] != init_time[1]:
-			# 	init_time = check_time()
-				# postar relatório
+			if weekly_post and current_time[1] != init_time[1]:
+				pdf_file = generate_report(init_time[1])
+				post_report(pdf_file, POST_CHANNEL, title='Relatório semana '+str(init_time[1]), com=None)
+				init_time = check_time()
 
-			time_diff = time_2[0] - time_1[0]
+			time_diff = current_time[0] - time_1[0]
 			if time_diff.total_seconds() > PULL_time:
 				time_1 = check_time()
 				rep.git.fetch()
