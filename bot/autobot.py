@@ -332,7 +332,6 @@ def main():
 	WATCHED_FILES_MTIMES = [(f, os.path.getmtime(f)) for f in WATCHED_FILES]
 
 	rep = Repo('.')
-	# new_PULL = False
 	weekly_post = False
 	PULL_time = 60
 
@@ -350,16 +349,13 @@ def main():
 
 			time_diff = time_2[0] - time_1[0]
 			if time_diff.total_seconds() > PULL_time:
+				time_1 = check_time()
 				rep.git.fetch()
 				commits_behind = rep.iter_commits('master..origin/master')
 				count_behind = sum(1 for c in commits_behind)
 
 				if count_behind > 0:
 					rep.git.pull()
-				# 	new_PULL = True
-
-				# if new_PULL:
-				# 	new_PULL = False
 					# Check whether a watched file has changed.
 					for f, mtime in WATCHED_FILES_MTIMES:
 						if os.path.getmtime(f) != mtime:
