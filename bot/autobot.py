@@ -348,7 +348,7 @@ def main():
 				init_time = check_time()
 				# postar relatório
 
-			time_diff = time_2 - time_1
+			time_diff = time_2[0] - time_1[0]
 			if time_diff.total_seconds() > PULL_time:
 				rep.git.fetch()
 				commits_behind = rep.iter_commits('master..origin/master')
