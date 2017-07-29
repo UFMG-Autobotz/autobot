@@ -343,8 +343,8 @@ def main():
 		while True:
 			time_2 = check_time()
 
-			if weekly_post and time_2[1] != init_time[1]:
-				init_time = check_time()
+			# if weekly_post and time_2[1] != init_time[1]:
+			# 	init_time = check_time()
 				# postar relatório
 
 			time_diff = time_2[0] - time_1[0]
