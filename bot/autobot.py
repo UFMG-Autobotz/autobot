@@ -332,8 +332,9 @@ def main():
 	WATCHED_FILES_MTIMES = [(f, os.path.getmtime(f)) for f in WATCHED_FILES]
 
 	rep = Repo('.')
-	new_PULL = False
+	# new_PULL = False
 	weekly_post = False
+	PULL_time = 30
 
 	READ_WEBSOCKET_DELAY = 1 # 1 second delay between reading from firehose
 	if slack_client.rtm_connect():
@@ -342,30 +343,31 @@ def main():
 
 		while True:
 			time_2 = check_time()
-			if time_2[1] != time_1[1]:
-				time_1 = check_time()
+
+			if weekly_post and time_2[1] != init_time[1]:
+				init_time = check_time()
 				# postar relatório
-			# time_diff = time_2 - time_1
-			# time_diff = time_diff.total_seconds()
-			# if time_diff > PULL_time:
-			# 	break
-			commits_behind = rep.iter_commits('master..origin/master')
-			count_behind = sum(1 for c in commits_behind)
 
-			if count_behind > 0:
-				rep.git.pull()
-				new_PULL = True
+			time_diff = time_2 - time_1
+			if time_diff.total_seconds() > PULL_time:
+				rep.git.fetch()
+				commits_behind = rep.iter_commits('master..origin/master')
+				count_behind = sum(1 for c in commits_behind)
 
-			if new_PULL:
-				new_PULL = False
-				# Check whether a watched file has changed.
-				for f, mtime in WATCHED_FILES_MTIMES:
-					if os.path.getmtime(f) != mtime:
-						# One of the files has changed, so restart the script.
-						# When running the script via './script.py', use
-						# os.execv(__file__, sys.argv)
-						# When running the script via 'python script.py', use
-						os.execv(sys.executable, ['python'] + sys.argv)
+				if count_behind > 0:
+					rep.git.pull()
+				# 	new_PULL = True
+
+				# if new_PULL:
+				# 	new_PULL = False
+					# Check whether a watched file has changed.
+					for f, mtime in WATCHED_FILES_MTIMES:
+						if os.path.getmtime(f) != mtime:
+							# One of the files has changed, so restart the script.
+							# When running the script via './script.py', use
+							# os.execv(__file__, sys.argv)
+							# When running the script via 'python script.py', use
+							os.execv(sys.executable, ['python'] + sys.argv)
 
 			command, channel, user = parse_slack_output(slack_client.rtm_read())
 			if command and channel:
