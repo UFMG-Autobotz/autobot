@@ -58,7 +58,7 @@ Não creio que seja necessário, mas dê preferência em conversar no privado. N
 Ainda estou em fase de testes, então podem haver problemas (tipo eu parar de funcionar ou tentar dominar o mundo). Caso haja problemas, fale com o criador (o cara legal de barba) e ele vai te ajudar assim que possível.
 
 Espero que eu possa ser muito útil para o dia a dia da equipe!'''
-	greetings_channel = '#general'
+	greetings_channel = 'C5AFCH0KD'
 
 	if slack_client.rtm_connect():
 		print "StarterBot connected!"
