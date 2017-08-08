@@ -6,5 +6,6 @@ bot/get_ids.sh
 bot/info
 bot/run_autobot.sh
 run_autobot.sh
+output.txt
 nohup.out
 */*.pyc

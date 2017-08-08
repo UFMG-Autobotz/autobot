@@ -1,5 +1,12 @@
 barbara-almeida:
-  atividades: []
+  atividades:
+  - [1.0, !!python/unicode 'Compilar Simulator']
+  - [1.0, !!python/unicode 'Rodar Viewer']
+  - [1.5, !!python/unicode 'Modificar e compilar Sample']
+  - [1.0, !!python/unicode 'Mesclar modulos']
+  - [2.0, !!python/unicode 'Organizar sede']
+  - [1.0, "Participa\xE7ao na reuniao dos coordenadores"]
+  - [2.0, !!python/unicode 'Compilar Vision']
   comments: ''
   nome: "B\xE1rbara Almeida"
   planos: []
@@ -39,12 +46,16 @@ josuehfa:
   nome: "Josu\xE9 Henrique"
   planos: []
 marimeireles:
-  atividades: []
+  atividades:
+  - [2.5, !!python/unicode 'Aprendendo a usar o Instrumentino']
+  - [1.5, !!python/unicode 'Leitura da bateria']
   comments: ''
   nome: Mariana Meireles
   planos: []
 pedro:
-  atividades: []
+  atividades:
+  - [4.0, !!python/unicode 'Planilha de Compras']
+  - [1.0, "Reuni\xE3o de Coordenadores"]
   comments: ''
   nome: Pedro Blanc
   planos: []
