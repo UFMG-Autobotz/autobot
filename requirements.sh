@@ -4,7 +4,7 @@ apt install texlive-fonts-extra
 apt install texlive-latex-extra
 apt install texlive-lang-portuguese
 apt install gnuplot5-x11
-#apt install xclip
+apt install xclip
 pip install requests
 pip install pyyaml
 pip install slackclient
