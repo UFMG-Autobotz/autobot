@@ -7,6 +7,7 @@ sys.path.append('./report')
 from latex_parser import generate_report
 from slackclient import SlackClient
 from git import Repo
+from socket import error as SocketError
 
 user_dict = {
 	'U5ALA8Y4V': 'admin',
@@ -335,7 +336,9 @@ def main():
 	POST_CHANNEL = '#relatórios'
 	PULL_time = 60
 
-	READ_WEBSOCKET_DELAY = 1 # 1 second delay between reading from firehose
+	READ_WEBSOCKET_DELAY = 1.5 # 1 second delay between reading from firehose
+	socket_err_cnt = 0
+	sucess_cnt = 0
 	if slack_client.rtm_connect():
 		print "StarterBot connected and running!"
 		check_timesheet()
@@ -365,10 +368,22 @@ def main():
 							# os.execv(__file__, sys.argv)
 							# When running the script via 'python script.py', use
 							os.execv(sys.executable, ['python'] + sys.argv)
+			try:
+				command, channel, user = parse_slack_output(slack_client.rtm_read())
+				if command and channel:
+					handle_command(command, channel, user)
+				sucess_cnt+=1
 
-			command, channel, user = parse_slack_output(slack_client.rtm_read())
-			if command and channel:
-				handle_command(command, channel, user)
+			except SocketError, err_text:
+				socket_err_cnt+=1
+
+				if socket_err_cnt == 1:
+					print err_text
+
+				if socket_err_cnt == 30:
+					print '30'
+					exit()
+
 			time.sleep(READ_WEBSOCKET_DELAY)
 	else:
 		print "Connection failed. Invalid Slack token or bot ID?"
