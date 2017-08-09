@@ -7,5 +7,5 @@ Bot para slack da equipe Autobotz UFMG. Atualmente em fase de teste.
 ### Pré requisitos
 Se não possuir todas as dependências instaladas:
 ```
-$ bash requirements.sh
+$ sudo bash requirements.sh
 ```
