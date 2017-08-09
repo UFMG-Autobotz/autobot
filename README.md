@@ -6,14 +6,14 @@ Bot para slack da equipe Autobotz UFMG. Atualmente em fase de teste.
 ## Estrutura do repositório
 
 <pre>
-╠══ bot				
+╠══ bot				  
 ║
-╠══ report			
+╠══ report			  geração do relatório
 ║  ║
 ║  ╠══ dados		
 ║  ╚══ imagens		
 ║
-╚══ timesheet		
+╚══ timesheet		  armazenamento de dados sobre o timesheet
 </pre>
 
 
