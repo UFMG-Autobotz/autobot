@@ -341,6 +341,7 @@ def main():
 
 	READ_WEBSOCKET_DELAY = 1.5 # 1 second delay between reading from firehose
 	socket_err_cnt = 0
+	git_err_cnt = 0
 	sucess_cnt = 0
 	if slack_client.rtm_connect():
 		print "StarterBot connected and running!"
@@ -354,38 +355,44 @@ def main():
 				init_time = check_time()
 
 			time_diff = current_time[0] - time_1[0]
-			if time_diff.total_seconds() > PULL_time:
-				time_1 = check_time()
-				rep.git.fetch()
-				commits_behind = rep.iter_commits('master..origin/master')
-				count_behind = sum(1 for c in commits_behind)
+			try:
+				if time_diff.total_seconds() > PULL_time:
+					time_1 = check_time()
+					rep.git.fetch()
+					commits_behind = rep.iter_commits('master..origin/master')
+					count_behind = sum(1 for c in commits_behind)
 
-				uncommited_changes = 0
-				for f, mtime in WATCHED_DATA_FILES_MTIMES:
-					if os.path.getmtime(f) != mtime:
-						rep.git.add(f)
-						uncommited_changes +=1
+					uncommited_changes = 0
+					for f, mtime in WATCHED_DATA_FILES_MTIMES:
+						if os.path.getmtime(f) != mtime:
+							rep.git.add(f)
+							uncommited_changes +=1
 
-				WATCHED_DATA_FILES_MTIMES = [(f, os.path.getmtime(f)) for f in WATCHED_DATA_FILES]
-
-				if uncommited_changes > 0:
-					rep.git.commit(m='bot_update')
-
-				if count_behind > 0 or uncommited_changes > 0:
-
-					rep.git.pull()
+					WATCHED_DATA_FILES_MTIMES = [(f, os.path.getmtime(f)) for f in WATCHED_DATA_FILES]
 
 					if uncommited_changes > 0:
-						rep.git.push()
+						rep.git.commit(m='bot_update')
 
-					# Check whether a watched file has changed.
-					for f, mtime in WATCHED_SRC_FILES_MTIMES:
-						if os.path.getmtime(f) != mtime:
-							# One of the files has changed, so restart the script.
-							# When running the script via './script.py', use
-							# os.execv(__file__, sys.argv)
-							# When running the script via 'python script.py', use
-							os.execv(sys.executable, ['python'] + sys.argv)
+					if count_behind > 0 or uncommited_changes > 0:
+
+						rep.git.pull()
+
+						if uncommited_changes > 0:
+							rep.git.push()
+
+						# Check whether a watched file has changed.
+						for f, mtime in WATCHED_SRC_FILES_MTIMES:
+							if os.path.getmtime(f) != mtime:
+								# One of the files has changed, so restart the script.
+								# When running the script via './script.py', use
+								# os.execv(__file__, sys.argv)
+								# When running the script via 'python script.py', use
+								os.execv(sys.executable, ['python'] + sys.argv)
+			except Exception, err_text:
+				git_err_cnt+=1
+
+				if git_err_cnt == 1:
+					print err_text
 			try:
 				command, channel, user = parse_slack_output(slack_client.rtm_read())
 				if command and channel:

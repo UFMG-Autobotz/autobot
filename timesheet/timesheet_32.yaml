@@ -5,8 +5,9 @@ barbara-almeida:
   - [1.5, !!python/unicode 'Modificar e compilar Sample']
   - [1.0, !!python/unicode 'Mesclar modulos']
   - [2.0, !!python/unicode 'Organizar sede']
-  - [1.0, "Participa\xE7ao na reuniao dos coordenadores"]
   - [2.0, !!python/unicode 'Compilar Vision']
+  - [2.5, !!python/unicode 'Tentar rodar simulator']
+  - [5.0, !!python/unicode 'Reunioes semana 31']
   comments: ''
   nome: "B\xE1rbara Almeida"
   planos: []
@@ -21,10 +22,13 @@ bruno-cerqueira:
   nome: Bruno Cerqueira
   planos: []
 daniel-leite:
-  atividades: []
+  atividades:
+  - [3.0, !!python/unicode 'Diagnosticar erros na placa do Circuito LiPo']
+  - [5.0, "Testes no c\xF3digo e programa\xE7\xE3o do PIC do circuito LiPo"]
+  - [5.0, "Reuni\xF5es"]
   comments: ''
   nome: Daniel Leite
-  planos: []
+  planos: ["Come\xE7ar a trabalhar na opera\xE7\xE3o do barco via controle remoto"]
 elisa-bacelar:
   atividades: []
   comments: ''
