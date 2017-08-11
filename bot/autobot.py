@@ -328,12 +328,15 @@ def main():
 	init_time = check_time()
 	time_1 = check_time()
 
-	WATCHED_FILES = ['bot/autobot.py', 'bot/general_utils.py', 'report/latex_parser.py']
-	WATCHED_FILES_MTIMES = [(f, os.path.getmtime(f)) for f in WATCHED_FILES]
+	WATCHED_SRC_FILES = ['bot/autobot.py', 'bot/general_utils.py', 'report/latex_parser.py']
+	WATCHED_SRC_FILES_MTIMES = [(f, os.path.getmtime(f)) for f in WATCHED_SRC_FILES]
+
+	WATCHED_DATA_FILES = ['report/dados/datas.tex', 'report/dados/membros.tex', TIMESHEET_FILE, TIMESHEET_FILE.replace()]
+	WATCHED_DATA_FILES_MTIMES = [(f, os.path.getmtime(f)) for f in WATCHED_DATA_FILES]
 
 	rep = Repo('.')
 	weekly_post = False
-	POST_CHANNEL = '#relatórios'
+	POST_CHANNEL = 'C6J00MNH2' #relatórios
 	PULL_time = 60
 
 	READ_WEBSOCKET_DELAY = 1.5 # 1 second delay between reading from firehose
@@ -341,9 +344,8 @@ def main():
 	sucess_cnt = 0
 	if slack_client.rtm_connect():
 		print "StarterBot connected and running!"
-		check_timesheet()
-
 		while True:
+			check_timesheet()
 			current_time = check_time()
 
 			if weekly_post and current_time[1] != init_time[1]:
@@ -358,10 +360,26 @@ def main():
 				commits_behind = rep.iter_commits('master..origin/master')
 				count_behind = sum(1 for c in commits_behind)
 
-				if count_behind > 0:
+				uncommited_changes = 0
+				for f, mtime in WATCHED_DATA_FILES_MTIMES:
+					if os.path.getmtime(f) != mtime:
+						rep.git.add(f)
+						uncommited_changes +=1
+
+				WATCHED_DATA_FILES_MTIMES = [(f, os.path.getmtime(f)) for f in WATCHED_DATA_FILES]
+
+				if uncommited_changes > 0:
+					rep.git.commit(m='bot_update')
+
+				if count_behind > 0 or uncommited_changes > 0:
+
 					rep.git.pull()
+
+					if uncommited_changes > 0:
+						rep.git.push()
+
 					# Check whether a watched file has changed.
-					for f, mtime in WATCHED_FILES_MTIMES:
+					for f, mtime in WATCHED_SRC_FILES_MTIMES:
 						if os.path.getmtime(f) != mtime:
 							# One of the files has changed, so restart the script.
 							# When running the script via './script.py', use
