@@ -7,4 +7,5 @@ bot/info
 bot/run_autobot.sh
 run_autobot.sh
 nohup.out
+output.txt
 */*.pyc
