@@ -331,7 +331,7 @@ def main():
 	WATCHED_SRC_FILES = ['bot/autobot.py', 'bot/general_utils.py', 'report/latex_parser.py']
 	WATCHED_SRC_FILES_MTIMES = [(f, os.path.getmtime(f)) for f in WATCHED_SRC_FILES]
 
-	WATCHED_DATA_FILES = ['report/dados/datas.tex', 'report/dados/membros.tex', TIMESHEET_FILE, TIMESHEET_FILE.replace()]
+	WATCHED_DATA_FILES = ['report/dados/datas.tex', 'report/dados/membros.tex', TIMESHEET_FILE, TIMESHEET_FILE.replace('yaml','pdf')]
 	WATCHED_DATA_FILES_MTIMES = [(f, os.path.getmtime(f)) for f in WATCHED_DATA_FILES]
 
 	rep = Repo('.')
