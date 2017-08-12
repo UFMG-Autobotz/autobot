@@ -332,7 +332,7 @@ def main():
 	WATCHED_SRC_FILES_MTIMES = [(f, os.path.getmtime(f)) for f in WATCHED_SRC_FILES]
 
 	WATCHED_DATA_FILES = ['report/dados/datas.tex', 'report/dados/membros.tex', TIMESHEET_FILE, TIMESHEET_FILE.replace('yaml','pdf')]
-	WATCHED_DATA_FILES_MTIMES = [(f, os.path.getmtime(f)) for f in WATCHED_DATA_FILES]
+	WATCHED_DATA_FILES_MTIMES = [(f, os.path.getmtime(f)) if os.path.isfile(f) else (None, None) for f in WATCHED_DATA_FILES]
 
 	rep = Repo('.')
 	weekly_post = False
@@ -364,11 +364,11 @@ def main():
 
 					uncommited_changes = 0
 					for f, mtime in WATCHED_DATA_FILES_MTIMES:
-						if os.path.getmtime(f) != mtime:
+						if (f is not None) and os.path.getmtime(f) != mtime:
 							rep.git.add(f)
 							uncommited_changes +=1
 
-					WATCHED_DATA_FILES_MTIMES = [(f, os.path.getmtime(f)) for f in WATCHED_DATA_FILES]
+					WATCHED_DATA_FILES_MTIMES = [(f, os.path.getmtime(f)) if os.path.isfile(f) else (None, None) for f in WATCHED_DATA_FILES]
 
 					if uncommited_changes > 0:
 						rep.git.commit(m='bot_update')
