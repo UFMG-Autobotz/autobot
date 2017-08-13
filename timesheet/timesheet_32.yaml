@@ -25,8 +25,20 @@ daniel-leite:
   atividades:
   - [3.0, !!python/unicode 'Diagnosticar erros na placa do Circuito LiPo']
   - [5.0, "Testes no c\xF3digo e programa\xE7\xE3o do PIC do circuito LiPo"]
-  - [5.0, "Reuni\xF5es"]
-  comments: ''
+  - [5.0, "Reuni\xF5es semana 31"]
+  - [2.5, "Reuni\xE3o semana 32"]
+  - [4.5, "Corre\xE7\xF5es e melhorias na biblioteca de R\xE1dio"]
+  - [1.0, "Tentar consertar a fonte sim\xE9trica"]
+  comments: "Os testes no Circuito LiPo foram comprometidos pelo fato de a fonte sim\xE9\
+    trica ter queimado. Tentarei consert\xE1-la ou procurar alguma maneira de como\
+    \ test\xE1-lo sem precisar dela.\nSurgiu a necessidade de se utilizarem os r\xE1\
+    dios da sede para o futebol, de forma que esta \xE9 uma boa hora para testar a\
+    \ biblioteca {\\tt Radio.h} feita em mar\xE7o deste ano. Comecei a relembrar os\
+    \ conceitos do m\xF3dulo de r\xE1dio e a corrigir alguns erros no c\xF3digo. Darei\
+    \ continuidade \xE0 corre\xE7\xE3o dos erros e aos testes, mas esta n\xE3o \xE9\
+    \ a minha tarefa prim\xE1ria. Trabalharei com isso em paralelo ao Circuito LiPo\
+    \ e, ap\xF3s termin\xE1-lo, em paralelo \xE0 opera\xE7\xE3o do barco via controle\
+    \ remoto."
   nome: Daniel Leite
   planos: ["Come\xE7ar a trabalhar na opera\xE7\xE3o do barco via controle remoto"]
 elisa-bacelar:
@@ -69,7 +81,16 @@ renan.cvr:
   nome: Renan Costa
   planos: []
 rodrigo-cezar:
-  atividades: []
+  atividades:
+  - [4.0, "Ajudar pessoas da navega\xE7\xE3o"]
+  - [1.5, "Brainstorms e Decis\xF5es da navega\xE7\xE3o sobre o Ve\xEDculo"]
+  - [4.0, !!python/unicode 'Consertos do Bot']
+  - [1.5, "Discuss\xF5es sobre Modelagem do Barco"]
+  - [2.0, "Reuni\xE3o de coordenadores"]
+  - [2.0, "Reuni\xF5es da navega\xE7\xE3o"]
+  - [3.5, "Reuni\xF5es do Ve\xEDculo Terrestre"]
+  - [3.0, "Reuni\xF5es gerais da equipe"]
+  - [3.0, !!python/unicode 'Tutoriais de gazebo']
   comments: ''
   nome: "Rodrigo C\xE9zar"
   planos: []
