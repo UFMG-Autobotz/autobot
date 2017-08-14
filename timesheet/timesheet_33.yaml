@@ -17,6 +17,7 @@ bruno-cerqueira:
 daniel-leite:
   atividades:
   - [2.0, !!python/unicode 'Reparar o Circuito LiPo']
+  - [0.5, !!python/unicode 'Testar o Circuito LiPo']
   comments: ''
   nome: Daniel Leite
   planos: []
