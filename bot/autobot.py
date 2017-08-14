@@ -338,7 +338,7 @@ def main():
 	WATCHED_SRC_FILES = ['bot/autobot.py', 'bot/general_utils.py', 'report/latex_parser.py']
 	WATCHED_SRC_FILES_MTIMES = [(f, os.path.getmtime(f)) for f in WATCHED_SRC_FILES]
 
-	WATCHED_DATA_FILES = ['report/dados/datas.tex', 'report/dados/membros.tex', TIMESHEET_FILE, TIMESHEET_FILE.replace('yaml','pdf')]
+	WATCHED_DATA_FILES = ['report/dados/datas.tex', 'report/dados/membros.tex', TIMESHEET_FILE]
 	WATCHED_DATA_FILES_MTIMES = [(f, os.path.getmtime(f)) if os.path.isfile(f) else (None, None) for f in WATCHED_DATA_FILES]
 
 	rep = Repo('.')
@@ -361,7 +361,8 @@ def main():
 				WATCHED_DATA_FILES.append(TIMESHEET_FILE)
 				WATCHED_DATA_FILES.append(TIMESHEET_FILE.replace('yaml','pdf'))
 				WATCHED_DATA_FILES_MTIMES.append((TIMESHEET_FILE, os.path.getmtime(TIMESHEET_FILE)))
-				WATCHED_DATA_FILES_MTIMES.append((TIMESHEET_FILE.replace('yaml','pdf'), os.path.getmtime(TIMESHEET_FILE.replace('yaml','pdf'))))
+				if os.path.isfile(TIMESHEET_FILE.replace('yaml','pdf')):
+					WATCHED_DATA_FILES_MTIMES.append((TIMESHEET_FILE.replace('yaml','pdf'), os.path.getmtime(TIMESHEET_FILE.replace('yaml','pdf'))))
 
 			if weekly_post and current_time[1] != init_time[1]:
 				pdf_file = generate_report(init_time[1])
