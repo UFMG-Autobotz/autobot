@@ -70,7 +70,8 @@ HELP = {
 
 PATH = './timesheet/'
 TIMESHEET_PREFIX = PATH+'timesheet_'
-TIMESHEET_FILE = PATH+'timesheet.yaml'
+TIMESHEET_TEMPLATE = PATH+'timesheet.yaml'
+TIMESHEET_FILE = TIMESHEET_TEMPLATE
 
 ATIVIDADES = 'atividades'
 COMMENTS = 'comments'
@@ -100,7 +101,7 @@ def check_timesheet():
 		filename_changed = False
 
 	if not os.path.isfile(new_TIMESHEET_FILE):
-		os.system("cp "+TIMESHEET_FILE+" "+new_TIMESHEET_FILE)
+		os.system("cp "+TIMESHEET_TEMPLATE+" "+new_TIMESHEET_FILE)
 		time.sleep(1)
 	TIMESHEET_FILE = new_TIMESHEET_FILE
 	return filename_changed

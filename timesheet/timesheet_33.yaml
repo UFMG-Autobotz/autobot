@@ -1,65 +1,65 @@
 barbara-almeida:
-  nome: "Bárbara Almeida"
   atividades: []
-  comments: ""
+  comments: ''
+  nome: "B\xE1rbara Almeida"
   planos: []
 biancamartins:
-  nome: "Bianca Martins"
   atividades: []
-  comments: ""
+  comments: ''
+  nome: Bianca Martins
   planos: []
 bruno-cerqueira:
-  nome: "Bruno Cerqueira"
   atividades: []
-  comments: ""
+  comments: ''
+  nome: Bruno Cerqueira
   planos: []
 daniel-leite:
-  nome: "Daniel Leite"
   atividades: []
-  comments: ""
+  comments: ''
+  nome: Daniel Leite
   planos: []
 elisa-bacelar:
-  nome: "Elisa Bacelar"
   atividades: []
-  comments: ""
+  comments: ''
+  nome: Elisa Bacelar
   planos: []
 jonatan:
-  nome: "Jonatan Campos"
   atividades: []
-  comments: ""
+  comments: ''
+  nome: Jonatan Campos
   planos: []
 josuehfa:
-  nome: "Josué Henrique"
   atividades: []
-  comments: ""
+  comments: ''
+  nome: "Josu\xE9 Henrique"
   planos: []
 marimeireles:
-  nome: "Mariana Meireles"
   atividades: []
-  comments: ""
+  comments: ''
+  nome: Mariana Meireles
   planos: []
 pedro:
-  nome: "Pedro Blanc"
   atividades: []
-  comments: ""
+  comments: ''
+  nome: Pedro Blanc
   planos: []
 renan.cvr:
-  nome: "Renan Costa"
   atividades: []
-  comments: ""
+  comments: ''
+  nome: Renan Costa
   planos: []
 rodrigo-cezar:
-  nome: "Rodrigo Cézar"
   atividades: []
-  comments: ""
+  comments: ''
+  nome: "Rodrigo C\xE9zar"
   planos: []
 thiago-lages:
-  nome: "Thiago Lages"
   atividades: []
-  comments: ""
+  comments: ''
+  nome: Thiago Lages
   planos: []
 victor-castro:
-  nome: "Victor Castro"
   atividades: []
-  comments: ""
+  comments: ''
+  nome: Victor Castro
   planos: []
