@@ -44,15 +44,16 @@ daniel-leite:
   - [2.5, "Reuni\xE3o semana 32"]
   - [4.5, "Corre\xE7\xF5es e melhorias na biblioteca de R\xE1dio"]
   - [1.0, "Tentar consertar a fonte sim\xE9trica"]
-  comments: "Os testes no circuito LiPo foram comprometidos pelo fato de a fonte sim\xE9\
+  comments: "Os testes no Circuito LiPo foram comprometidos pelo fato de a fonte sim\xE9\
     trica ter queimado. Tentarei consert\xE1-la ou procurar alguma maneira de como\
-    \ test\xE1-lo sem precisar dela.\nSurgiu a necessidade de se utilizar os r\xE1\
+    \ test\xE1-lo sem precisar dela.\nSurgiu a necessidade de se utilizarem os r\xE1\
     dios da sede para o futebol, de forma que esta \xE9 uma boa hora para testar a\
-    \ biblioteca de R\xE1dio feita em mar\xE7o deste ano. Comecei a relembrar os conceitos\
-    \ do m\xF3dulo de r\xE1dio e a corrigir alguns erros no c\xF3digo. Darei continuidade\
-    \ \xE0 corre\xE7\xE3o dos erros e aos testes, mas esta n\xE3o \xE9 a minha tarefa\
-    \ prim\xE1ria. Trabalharei com isso em paralelo ao circuito LiPo e, ap\xF3s termin\xE1\
-    -lo, em paralelo \xE0 opera\xE7\xE3o do barco via controle remoto."
+    \ biblioteca {\\tt Radio.h} feita em mar\xE7o deste ano. Comecei a relembrar os\
+    \ conceitos do m\xF3dulo de r\xE1dio e a corrigir alguns erros no c\xF3digo. Darei\
+    \ continuidade \xE0 corre\xE7\xE3o dos erros e aos testes, mas esta n\xE3o \xE9\
+    \ a minha tarefa prim\xE1ria. Trabalharei com isso em paralelo ao Circuito LiPo\
+    \ e, ap\xF3s termin\xE1-lo, em paralelo \xE0 opera\xE7\xE3o do barco via controle\
+    \ remoto."
   nome: Daniel Leite
   planos: [!!python/unicode 'Terminar testes no Circuito LiPo', "Come\xE7ar a trabalhar\
       \ na opera\xE7\xE3o do barco via controle remoto", "Testar biblioteca de r\xE1\
