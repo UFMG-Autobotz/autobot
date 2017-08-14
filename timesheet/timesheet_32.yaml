@@ -99,7 +99,10 @@ renan.cvr:
   planos: []
 rodrigo-cezar:
   atividades:
-  - [1.0, "Reuni\xE3o semanal da equipe (11/08)"]
+  - [4.0, "Ajudar pessoas da navega\xE7\xE3o"]
+  - [1.5, "Brainstorms e Decis\xF5es da navega\xE7\xE3o sobre o Ve\xEDculo"]
+  - [4.0, !!python/unicode 'Consertos do Bot']
+  - [1.5, "Discuss\xF5es sobre Modelagem do Barco"]
   comments: ''
   nome: "Rodrigo C\xE9zar"
   planos: []
