@@ -93,10 +93,17 @@ def check_timesheet():
 	semana_atual = data.isocalendar()[1]
 	global TIMESHEET_FILE
 	new_TIMESHEET_FILE = TIMESHEET_PREFIX + str(semana_atual) + '.yaml'
+
+	if new_TIMESHEET_FILE != TIMESHEET_FILE:
+		filename_changed = True
+	else:
+		filename_changed = False
+
 	if not os.path.isfile(new_TIMESHEET_FILE):
 		os.system("cp "+TIMESHEET_FILE+" "+new_TIMESHEET_FILE)
 		time.sleep(1)
 	TIMESHEET_FILE = new_TIMESHEET_FILE
+	return filename_changed
 
 def upload_file(filepath, channels, filename=None, content=None, title=None, initial_comment=None):
 	"""Upload file to channel
@@ -335,7 +342,7 @@ def main():
 	WATCHED_DATA_FILES_MTIMES = [(f, os.path.getmtime(f)) if os.path.isfile(f) else (None, None) for f in WATCHED_DATA_FILES]
 
 	rep = Repo('.')
-	weekly_post = False
+	weekly_post = True
 	POST_CHANNEL = 'C6J00MNH2' #relatórios
 	PULL_time = 60
 
@@ -343,11 +350,18 @@ def main():
 	socket_err_cnt = 0
 	git_err_cnt = 0
 	sucess_cnt = 0
+
 	if slack_client.rtm_connect():
 		print "StarterBot connected and running!"
 		while True:
-			check_timesheet()
+			filename_changed = check_timesheet()
 			current_time = check_time()
+
+			if filename_changed:
+				WATCHED_DATA_FILES.append(TIMESHEET_FILE)
+				WATCHED_DATA_FILES.append(TIMESHEET_FILE.replace('yaml','pdf'))
+				WATCHED_DATA_FILES_MTIMES.append((TIMESHEET_FILE, os.path.getmtime(TIMESHEET_FILE)))
+				WATCHED_DATA_FILES_MTIMES.append((TIMESHEET_FILE.replace('yaml','pdf'), os.path.getmtime(TIMESHEET_FILE.replace('yaml','pdf'))))
 
 			if weekly_post and current_time[1] != init_time[1]:
 				pdf_file = generate_report(init_time[1])

@@ -6,18 +6,33 @@ barbara-almeida:
   - [1.0, !!python/unicode 'Mesclar modulos']
   - [2.0, !!python/unicode 'Organizar sede']
   - [2.0, !!python/unicode 'Compilar Vision']
-  - [2.5, !!python/unicode 'Tentar rodar simulator']
+  - [4.5, !!python/unicode 'Tentar rodar simulator']
   - [5.0, !!python/unicode 'Reunioes semana 31']
-  comments: ''
+  - [2.0, "Documenta\xE7\xE3o VSSS"]
+  - [5.0, "Reuni\xF5es semana 32"]
+  comments: ": Como o bot parou de funcionar no fim de semana, cont\xE9m atividades\
+    \ das semanas 31 e 32"
   nome: "B\xE1rbara Almeida"
-  planos: []
+  planos: [!!python/unicode 'Aprender a usar o Gazebo']
 biancamartins:
-  atividades: []
+  atividades:
+  - [4.0, "Pesquisas inicias sobre utiliza\xE7\xE3o do Galileo"]
+  - [5.0, "Reuni\xF5es semana 31"]
+  - [2.5, "Reuni\xF5es semana 32"]
+  - [9.0, !!python/unicode 'Montar circuito de pwm, receptor e transmissor infravermelho
+      no multisim, na protoboard e testar']
   comments: ''
   nome: Bianca Martins
-  planos: []
+  planos: [!!python/unicode 'Continuar pesquisa sobre Galileo e realizar testes; Documentar
+      resultados']
 bruno-cerqueira:
-  atividades: []
+  atividades:
+  - [3.0, "Elabora\xE7\xE3o do Plano de A\xE7\xE3o da Comunica\xE7\xE3o"]
+  - [1.0, !!python/unicode 'Mapeamento de Emails Professores']
+  - [4.0, "dimensionamento e desenho de pe\xE7as no Inventor"]
+  - [1.0, "desenho de pe\xE7a no MDF"]
+  - [2.0, "reuni\xE3o semanal"]
+  - [1.0, "Estudo da proposta do chassi de 3 rodas e de conceitos b\xE1sicos"]
   comments: ''
   nome: Bruno Cerqueira
   planos: []
@@ -25,19 +40,32 @@ daniel-leite:
   atividades:
   - [3.0, !!python/unicode 'Diagnosticar erros na placa do Circuito LiPo']
   - [5.0, "Testes no c\xF3digo e programa\xE7\xE3o do PIC do circuito LiPo"]
-  - [5.0, "Reuni\xF5es"]
-  comments: ''
+  - [5.0, "Reuni\xF5es semana 31"]
+  - [2.5, "Reuni\xE3o semana 32"]
+  - [4.5, "Corre\xE7\xF5es e melhorias na biblioteca de R\xE1dio"]
+  - [1.0, "Tentar consertar a fonte sim\xE9trica"]
+  comments: "Os testes no circuito LiPo foram comprometidos pelo fato de a fonte sim\xE9\
+    trica ter queimado. Tentarei consert\xE1-la ou procurar alguma maneira de como\
+    \ test\xE1-lo sem precisar dela.\nSurgiu a necessidade de se utilizar os r\xE1\
+    dios da sede para o futebol, de forma que esta \xE9 uma boa hora para testar a\
+    \ biblioteca de R\xE1dio feita em mar\xE7o deste ano. Comecei a relembrar os conceitos\
+    \ do m\xF3dulo de r\xE1dio e a corrigir alguns erros no c\xF3digo. Darei continuidade\
+    \ \xE0 corre\xE7\xE3o dos erros e aos testes, mas esta n\xE3o \xE9 a minha tarefa\
+    \ prim\xE1ria. Trabalharei com isso em paralelo ao circuito LiPo e, ap\xF3s termin\xE1\
+    -lo, em paralelo \xE0 opera\xE7\xE3o do barco via controle remoto."
   nome: Daniel Leite
-  planos: ["Come\xE7ar a trabalhar na opera\xE7\xE3o do barco via controle remoto"]
+  planos: [!!python/unicode 'Terminar testes no Circuito LiPo', "Come\xE7ar a trabalhar\
+      \ na opera\xE7\xE3o do barco via controle remoto", "Testar biblioteca de r\xE1\
+      dio e continuar melhorias"]
 elisa-bacelar:
-  atividades: []
+  atividades:
+  - [8.0, "Compila\xE7\xE3o do vision"]
+  - [8.0, "Cria\xE7\xE3o do qt package do vision"]
+  - [3.0, !!python/unicode 'Ajudar victor com funcionamento do viewer']
+  - [3.0, "Arruma\xE7\xE3o da sede"]
+  - [2.0, "Instala\xE7\xE3o das ferramentas no novo computador"]
   comments: ''
   nome: Elisa Bacelar
-  planos: []
-italo-lelis:
-  atividades: []
-  comments: ''
-  nome: Italo Lelis
   planos: []
 jonatan:
   atividades: []
@@ -69,12 +97,31 @@ renan.cvr:
   nome: Renan Costa
   planos: []
 rodrigo-cezar:
-  atividades: []
+  atividades:
+  - [1.0, "Reuni\xE3o semanal da equipe (11/08)"]
   comments: ''
   nome: "Rodrigo C\xE9zar"
   planos: []
 thiago-lages:
-  atividades: []
+  atividades:
+  - [12.0, "Pesquisar a respeito de filtro de Kalman e filtro de Wiener, assistir\
+      \ video aulas, videos de implementa\xE7\xF5es dos filtros, exemplos de aplica\xE7\
+      \xF5es. Enviar e-mail para um aluno de mestrado UFSJ/CEFET a respeito de sua\
+      \ implementa\xE7\xE3o em MATLAB, procurando saber sobre como foi feita aquisi\xE7\
+      \xE3o de dados e plot de gr\xE1fico em tempo real no MATLAB, al\xE9m de dicas\
+      \ e o que ele achava a respeito da nossa implementa\xE7\xE3o para resolver o\
+      \ problema de localiza\xE7\xE3o do barco. Algumas tentativas de implementa\xE7\
+      \xE3o da aquisi\xE7\xE3o em tempo real de dados da IMU em MATLAB, sem sucesso.\
+      \ A aquisi\xE7\xE3o foi feita na pr\xF3pria Arduino IDE."]
+  - [12.0, "Procura de implementa\xE7\xF5es de c\xF3digo para teste da IMU. Leitura,\
+      \ entendimento e debug do c\xF3digo existente da equipe para fazer funcionar\
+      \ o teste da mesma. Leitura, entendimento e debug do c\xF3digo em Processing\
+      \ para visualiza\xE7\xE3o dos resultados de localiza\xE7\xE3o espacial da IMU.\
+      \ Variados testes como obten\xE7\xE3o inicial de dados, X amostragens dos sinais\
+      \ iniciais pra melhor calibragem dos sensores.  Obten\xE7\xE3o de algumas equa\xE7\
+      \xF5es para os as angula\xE7\xF5es dos motores do barco, que relacionam os dados\
+      \ de entrada que temos, como posi\xE7\xE3o (pelos ultrassonicos) e valores dos\
+      \ outros sensores, e a saida desejada (angulacao dos motores)"]
   comments: ''
   nome: Thiago Lages
   planos: []
