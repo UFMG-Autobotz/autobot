@@ -10,6 +10,7 @@ barbara-almeida:
   - [5.0, !!python/unicode 'Reunioes semana 31']
   - [2.0, "Documenta\xE7\xE3o VSSS"]
   - [5.0, "Reuni\xF5es semana 32"]
+  - [1.0, !!python/unicode 'Seguir tutoriais do Gazebo']
   comments: ": Como o bot parou de funcionar no fim de semana, cont\xE9m atividades\
     \ das semanas 31 e 32"
   nome: "B\xE1rbara Almeida"
