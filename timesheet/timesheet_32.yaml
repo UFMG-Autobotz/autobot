@@ -103,6 +103,11 @@ rodrigo-cezar:
   - [1.5, "Brainstorms e Decis\xF5es da navega\xE7\xE3o sobre o Ve\xEDculo"]
   - [4.0, !!python/unicode 'Consertos do Bot']
   - [1.5, "Discuss\xF5es sobre Modelagem do Barco"]
+  - [2.0, "Reuni\xE3o de coordenadores"]
+  - [2.0, "Reuni\xF5es da navega\xE7\xE3o"]
+  - [3.5, "Reuni\xF5es do Ve\xEDculo Terrestre"]
+  - [3.0, "Reuni\xF5es gerais da equipe"]
+  - [3.0, !!python/unicode 'Tutoriais de gazebo']
   comments: ''
   nome: "Rodrigo C\xE9zar"
   planos: []
