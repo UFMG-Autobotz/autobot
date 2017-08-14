@@ -1,5 +1,6 @@
 barbara-almeida:
-  atividades: []
+  atividades:
+  - [1.5, !!python/unicode 'Seguir tutoriais do Gazebo']
   comments: ''
   nome: "B\xE1rbara Almeida"
   planos: []
