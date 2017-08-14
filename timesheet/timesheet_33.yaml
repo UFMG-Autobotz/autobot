@@ -15,7 +15,8 @@ bruno-cerqueira:
   nome: Bruno Cerqueira
   planos: []
 daniel-leite:
-  atividades: []
+  atividades:
+  - [2.0, !!python/unicode 'Reparar o Circuito LiPo']
   comments: ''
   nome: Daniel Leite
   planos: []
