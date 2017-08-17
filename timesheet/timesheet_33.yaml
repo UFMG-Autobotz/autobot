@@ -60,7 +60,9 @@ rodrigo-cezar:
   nome: "Rodrigo C\xE9zar"
   planos: []
 thiago-lages:
-  atividades: []
+  atividades:
+  - [2.0, !!python/unicode 'leitura e entendimento do artigo de controle de hovercraft
+      providenciado pelo MACRO']
   comments: ''
   nome: Thiago Lages
   planos: []
