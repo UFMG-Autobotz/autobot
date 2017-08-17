@@ -63,6 +63,10 @@ thiago-lages:
   atividades:
   - [2.0, !!python/unicode 'leitura e entendimento do artigo de controle de hovercraft
       providenciado pelo MACRO']
+  - [1.5, "escrita de um documento resumo dos fundamentos e princ\xEDpios matem\xE1\
+      ticos utilizados no artigo, verificac\xE3o de alguns c\xE1lculos e relacao com\
+      \ o que teremos no nosso barco (quais sensores fornecer\xE3o quais dados, quais\
+      \ s\xE3o as vari\xE1veis de controle, como as controlaremos, etc)"]
   comments: ''
   nome: Thiago Lages
   planos: []
