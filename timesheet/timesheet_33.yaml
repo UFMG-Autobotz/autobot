@@ -17,7 +17,7 @@ bruno-cerqueira:
 daniel-leite:
   atividades:
   - [2.0, !!python/unicode 'Reparar o Circuito LiPo']
-  - [0.5, !!python/unicode 'Testar o Circuito LiPo']
+  - [2.0, !!python/unicode 'Testar o Circuito LiPo']
   comments: ''
   nome: Daniel Leite
   planos: []
@@ -60,7 +60,28 @@ rodrigo-cezar:
   nome: "Rodrigo C\xE9zar"
   planos: []
 thiago-lages:
-  atividades: []
+  atividades:
+  - [2.0, !!python/unicode 'leitura e entendimento do artigo de controle de hovercraft
+      providenciado pelo MACRO']
+  - [1.5, "escrita de um documento resumo dos fundamentos e princ\xEDpios matem\xE1\
+      ticos utilizados no artigo, verificac\xE3o de alguns c\xE1lculos e relacao com\
+      \ o que teremos no nosso barco (quais sensores fornecer\xE3o quais dados, quais\
+      \ s\xE3o as vari\xE1veis de controle, como as controlaremos, etc)"]
+  - [4.0, "pesquisa sobre efeito Coriolis (textos e videos) e artigo 'Guidance and\
+      \ Control of Ocean Vehicles', T. I.  Fossen, que fala sobre modelagem de veiculos\
+      \ oce\xE2nicos; fazendo algumas simplificac\xF5es, desconsiderando efeitos do\
+      \ vento e ondas, e movimentos como roll, pitch (rotac\xF5es nos eixos X e Y)\
+      \ e heave (movimento up/down no eixo Z). Sua import\xE2ncia se d\xE1 no fato\
+      \ de que \xE9 citado no artigo fornecido pelo MACRO para a equipe (cuja modelagem\
+      \ \xE9 praticamente toda baseada no artigo do Fossen). Al\xE9m disso, pensei\
+      \ e discuti com os membros Josu\xE9, Daniel e Jonatan sobre medir forca de cada\
+      \ um dos propulsores. Pensamos em medir de alguma maneira (arduino, encoders)\
+      \ a velocidade das h\xE9lices e comparar com as tabelas de velocidades do datasheet,\
+      \ utilizar um equipamento do Lex pr\xF3prio para esse tipo de medicao, entre\
+      \ outros. Fiz c\xE1lculos relacionando a forca dos propulsores com as vari\xE1\
+      veis que temos que levar em conta na modelagem, como as velocidades 'surge',\
+      \ 'sway' do barco e o torque em torno do eixo Z. C\xE1lculo aproxmado do momento\
+      \ de in\xE9rcia do barco, para relacionar torque e acelerac\xE3o angular."]
   comments: ''
   nome: Thiago Lages
   planos: []
