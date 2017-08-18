@@ -49,6 +49,11 @@ marimeireles:
   atividades:
   - [2.0, "reuni\xE3o"]
   - [6.0, "site para documenta\xE7\xE3o"]
+  - [2.0, !!python/unicode 'aprendendo python']
+  - [0.5, !!python/unicode 'lendo sobre leitor de bateria']
+  - [2.0, !!python/unicode 'aprendendo Beamer LATEX']
+  - [3.0, !!python/unicode 'criando template']
+  - [3.0, "preparando apresenta\xE7\xE3o"]
   comments: ''
   nome: Mariana Meireles
   planos: []
