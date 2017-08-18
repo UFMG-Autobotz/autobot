@@ -23,7 +23,12 @@ daniel-leite:
   - [2.0, !!python/unicode 'Fazer conectores para a HAMS']
   - [1.5, "Reuni\xE3o semanal"]
   - [1.5, "Reuni\xE3o da eletr\xF4nica"]
-  comments: ''
+  comments: "A falta de fonte sim\xE9trica ainda est\xE1 atrapalhando os testes no\
+    \ circuito LiPo, mas os principais defeitos da placa j\xE1 foram corrigidos. Fiz\
+    \ alguns pequenos testes nos laborat\xF3rios da Eng.\nA HAMS est\xE1 funcionando\
+    \ ok, talvez eu possa fazer algumas melhorias na biblioteca do Ardu\xEDno feita\
+    \ para control\xE1-la. Tenho algumas id\xE9ias para reprojet\xE1-la para uso no\
+    \ Ve\xEDculo Terrestre."
   nome: Daniel Leite
   planos: []
 elisa-bacelar:
