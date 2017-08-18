@@ -89,8 +89,7 @@ thiago-lages:
   nome: Thiago Lages
   planos: []
 victor-castro:
-  atividades:
-  - [6.0, !!python/unicode 'Procurar e solucionar bugs do _VSS-Simulator-ROS_']
+  atividades: []
   comments: ''
   nome: Victor Castro
   planos: []
