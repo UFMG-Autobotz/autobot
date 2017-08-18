@@ -30,7 +30,8 @@ daniel-leite:
     \ para control\xE1-la. Tenho algumas id\xE9ias para reprojetsr a placa para uso\
     \ no Ve\xEDculo Terrestre."
   nome: Daniel Leite
-  planos: ["Terminar valida\xE7\xE3o do Circuito LiPo e documentar"]
+  planos: ["Terminar valida\xE7\xE3o do Circuito LiPo e documentar", !!python/unicode 'Projetar
+      melhorias na HAMS']
 elisa-bacelar:
   atividades: []
   comments: ''
