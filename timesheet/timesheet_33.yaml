@@ -19,6 +19,9 @@ daniel-leite:
   atividades:
   - [2.0, !!python/unicode 'Reparar o Circuito LiPo']
   - [2.0, !!python/unicode 'Testar o Circuito LiPo']
+  - [2.0, "Testar se a HAMS est\xE1 funcionando bem (sim)"]
+  - [2.0, !!python/unicode 'Fazer conectores para a HAMS']
+  - [1.5, "Reuni\xE3o semanal"]
   comments: ''
   nome: Daniel Leite
   planos: []
