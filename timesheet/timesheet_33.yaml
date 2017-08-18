@@ -36,6 +36,7 @@ josuehfa:
   atividades:
   - [4.0, !!python/unicode 'Tentativa de converter arquivos do Inventor (.iam) e do
       SolidWorks (.sldptr) para URDF']
+  - [1.0, "Reuni\xE3o da Mec\xE2nica"]
   comments: ''
   nome: "Josu\xE9 Henrique"
   planos: []
