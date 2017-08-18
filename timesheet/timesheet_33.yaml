@@ -89,7 +89,8 @@ thiago-lages:
   nome: Thiago Lages
   planos: []
 victor-castro:
-  atividades: []
+  atividades:
+  - [4.0, !!python/unicode 'Solucionados maiores "warnings" em VSS-Simulator-ROS']
   comments: ''
   nome: Victor Castro
   planos: []
