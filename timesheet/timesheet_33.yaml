@@ -91,9 +91,6 @@ thiago-lages:
 victor-castro:
   atividades:
   - [4.0, !!python/unicode 'Solucionados maiores "warnings" em VSS-Simulator-ROS']
-  - [1.0, "Renomeados execut\xE1veis e mensagens customizadas do pacote ROS para o\
-      \ padr\xE3o. Al\xE9m disso, foi trocado o endere\xE7o do reposit\xF3rio. O atual\
-      \ \xE9"]
   comments: ''
   nome: Victor Castro
   planos: []
