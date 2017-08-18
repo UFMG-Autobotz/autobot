@@ -57,6 +57,7 @@ marimeireles:
   - [0.5, !!python/unicode 'lendo papers sobre outros times']
   - [5.0, !!python/unicode 'aprendendo git']
   - [1.0, "montando mdf com pe\xE7as do VSS"]
+  - [3.0, "fazendo documenta\xE7\xE3o"]
   comments: ''
   nome: Mariana Meireles
   planos: []
