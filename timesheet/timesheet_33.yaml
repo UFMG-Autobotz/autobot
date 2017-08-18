@@ -1,6 +1,10 @@
 barbara-almeida:
   atividades:
   - [1.5, !!python/unicode 'Seguir tutoriais do Gazebo']
+  - [1.0, "organiza\xE7\xE3o da sede"]
+  - [4.0, "tentar importar rob\xF4 para o simulator"]
+  - [1.0, "reuni\xE3o da navega\xE7\xE3o"]
+  - [1.5, "reuni\xE3o da equipe"]
   comments: ''
   nome: "B\xE1rbara Almeida"
   planos: []
@@ -18,9 +22,20 @@ daniel-leite:
   atividades:
   - [2.0, !!python/unicode 'Reparar o Circuito LiPo']
   - [2.0, !!python/unicode 'Testar o Circuito LiPo']
-  comments: ''
+  - [2.0, "Testar se a HAMS est\xE1 funcionando bem (sim)"]
+  - [2.0, !!python/unicode 'Fazer conectores para a HAMS']
+  - [1.5, "Reuni\xE3o semanal"]
+  - [1.5, "Reuni\xE3o da eletr\xF4nica"]
+  comments: "A falta de fonte sim\xE9trica ainda est\xE1 atrapalhando os testes no\
+    \ circuito LiPo, mas os principais defeitos da placa j\xE1 foram corrigidos. Fiz\
+    \ alguns pequenos testes nos laborat\xF3rios da Eng.\nA HAMS est\xE1 funcionando\
+    \ ok. Talvez eu possa fazer algumas melhorias na biblioteca do Ardu\xEDno feita\
+    \ para control\xE1-la. Tenho algumas id\xE9ias para reprojetsr a placa para uso\
+    \ no Ve\xEDculo Terrestre."
   nome: Daniel Leite
-  planos: []
+  planos: ["Terminar valida\xE7\xE3o do Circuito LiPo e documentar", !!python/unicode 'Projetar
+      melhorias na HAMS', "Testar m\xF3dulos de r\xE1dio da sede", "Come\xE7ar a trabalhar\
+      \ na opera\xE7\xE3o do barco via controle remoto"]
 elisa-bacelar:
   atividades: []
   comments: ''
@@ -33,13 +48,28 @@ jonatan:
   planos: []
 josuehfa:
   atividades:
-  - [3.0, !!python/unicode 'Tentativa de converter arquivos do Inventor (.iam) e do
+  - [4.0, !!python/unicode 'Tentativa de converter arquivos do Inventor (.iam) e do
       SolidWorks (.sldptr) para URDF']
+  - [1.0, "Reuni\xE3o da Mec\xE2nica"]
+  - [1.5, "Reuni\xE3o Administrativa"]
   comments: ''
   nome: "Josu\xE9 Henrique"
   planos: []
 marimeireles:
-  atividades: []
+  atividades:
+  - [2.0, "reuni\xE3o"]
+  - [6.0, "site para documenta\xE7\xE3o"]
+  - [2.0, !!python/unicode 'aprendendo python']
+  - [0.5, !!python/unicode 'lendo sobre leitor de bateria']
+  - [2.0, !!python/unicode 'aprendendo Beamer LATEX']
+  - [3.0, !!python/unicode 'criando template']
+  - [3.0, "preparando apresenta\xE7\xE3o"]
+  - [0.5, !!python/unicode 'lendo papers sobre outros times']
+  - [5.0, !!python/unicode 'aprendendo git']
+  - [1.0, "montando mdf com pe\xE7as do VSS"]
+  - [3.0, "fazendo documenta\xE7\xE3o"]
+  - [1.5, "reuni\xE3o administrativa"]
+  - [1.0, "reuni\xE3o da eletr\xF4nica"]
   comments: ''
   nome: Mariana Meireles
   planos: []
@@ -56,6 +86,9 @@ renan.cvr:
 rodrigo-cezar:
   atividades:
   - [0.5, !!python/unicode 'Consertos do Bot']
+  - [1.0, "Reuni\xE3o da Navega\xE7\xE3o"]
+  - [1.5, "Reuni\xE3o da Equipe"]
+  - [0.5, "Reuni\xE3o com o Arthur"]
   comments: ''
   nome: "Rodrigo C\xE9zar"
   planos: []
@@ -86,7 +119,10 @@ thiago-lages:
   nome: Thiago Lages
   planos: []
 victor-castro:
-  atividades: []
+  atividades:
+  - [4.0, !!python/unicode 'Solucionados maiores "warnings" em VSS-Simulator-ROS']
+  - [1.0, "Renomeados execut\xE1veis e mensagens customizadas do Pacote ROS para o\
+      \ convencional.  Al\xE9m disso, foi trocado o endere\xE7o do reposit\xF3rio."]
   comments: ''
   nome: Victor Castro
-  planos: []
+  planos: ["Tornar a execu\xE7\xE3o do VSS-Simulator-ROS satisfat\xF3ria"]
