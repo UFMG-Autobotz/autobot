@@ -2,6 +2,7 @@ barbara-almeida:
   atividades:
   - [1.5, !!python/unicode 'Seguir tutoriais do Gazebo']
   - [1.0, "organiza\xE7\xE3o da sede"]
+  - [4.0, "tentar importar rob\xF4 para o simulator"]
   comments: ''
   nome: "B\xE1rbara Almeida"
   planos: []
