@@ -31,8 +31,8 @@ daniel-leite:
     \ circuito LiPo, mas os principais defeitos da placa j\xE1 foram corrigidos. Fiz\
     \ alguns pequenos testes nos laborat\xF3rios da Eng.\nA HAMS est\xE1 funcionando\
     \ ok. Talvez eu possa fazer algumas melhorias na biblioteca do Ardu\xEDno feita\
-    \ para control\xE1-la. Tenho algumas id\xE9ias para reprojetsr a placa para uso\
-    \ no Ve\xEDculo Terrestre."
+    \ para control\xE1-la. Tenho algumas ideias para reprojetar a placa para uso no\
+    \ Ve\xEDculo Terrestre."
   nome: Daniel Leite
   planos: ["Terminar valida\xE7\xE3o do Circuito LiPo e documentar", !!python/unicode 'Projetar
       melhorias na HAMS', !!python/unicode 'Testar barco com o joystick', "Testar\
