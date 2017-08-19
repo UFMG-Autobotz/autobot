@@ -86,6 +86,7 @@ renan.cvr:
 rodrigo-cezar:
   atividades:
   - [0.5, !!python/unicode 'Consertos do Bot']
+  - [1.0, "Reuni\xE3o da Navega\xE7\xE3o"]
   comments: ''
   nome: "Rodrigo C\xE9zar"
   planos: []
