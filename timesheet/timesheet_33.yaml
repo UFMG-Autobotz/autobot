@@ -26,7 +26,7 @@ daniel-leite:
   - [2.0, !!python/unicode 'Fazer conectores para a HAMS']
   - [1.5, "Reuni\xE3o semanal"]
   - [1.5, "Reuni\xE3o da eletr\xF4nica"]
-  - [2.0, "Melhorias no c\xF3digo de opera\xE7\xE3o do barco via joystick"]
+  - [2.5, "Melhorias no c\xF3digo de opera\xE7\xE3o do barco via joystick"]
   comments: "A falta de fonte sim\xE9trica ainda est\xE1 atrapalhando os testes no\
     \ circuito LiPo, mas os principais defeitos da placa j\xE1 foram corrigidos. Fiz\
     \ alguns pequenos testes nos laborat\xF3rios da Eng.\nA HAMS est\xE1 funcionando\
