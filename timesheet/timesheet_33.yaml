@@ -35,7 +35,8 @@ daniel-leite:
     \ no Ve\xEDculo Terrestre."
   nome: Daniel Leite
   planos: ["Terminar valida\xE7\xE3o do Circuito LiPo e documentar", !!python/unicode 'Projetar
-      melhorias na HAMS', "Testar m\xF3dulos de r\xE1dio da sede"]
+      melhorias na HAMS', !!python/unicode 'Testar barco com o joystick', "Testar\
+      \ m\xF3dulos de r\xE1dio da sede"]
 elisa-bacelar:
   atividades: []
   comments: ''
@@ -52,6 +53,7 @@ jonatan:
   - [1.5, "Reuni\xE3o Geral Autobotz"]
   - [0.5, "Fazer Conectores para a Eletr\xF4nica"]
   - [2.5, !!python/unicode 'Inicio da Prototipagem do VSS em MDF']
+  - [1.5, "Pesquisa sobre Caixas de Redu\xE7\xE3o"]
   comments: ''
   nome: Jonatan Campos
   planos: []
