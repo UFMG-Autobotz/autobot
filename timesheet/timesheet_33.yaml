@@ -35,8 +35,7 @@ daniel-leite:
     \ Ve\xEDculo Terrestre."
   nome: Daniel Leite
   planos: ["Terminar valida\xE7\xE3o do Circuito LiPo e documentar", !!python/unicode 'Projetar
-      melhorias na HAMS', !!python/unicode 'Testar barco com o joystick', "Testar\
-      \ m\xF3dulos de r\xE1dio da sede"]
+      melhorias na HAMS', !!python/unicode 'Testar barco com o joystick']
 elisa-bacelar:
   atividades: []
   comments: ''
