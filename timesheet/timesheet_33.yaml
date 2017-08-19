@@ -87,6 +87,8 @@ rodrigo-cezar:
   atividades:
   - [0.5, !!python/unicode 'Consertos do Bot']
   - [1.0, "Reuni\xE3o da Navega\xE7\xE3o"]
+  - [1.5, "Reuni\xE3o da Equipe"]
+  - [0.5, "Reuni\xE3o com o Arthur"]
   comments: ''
   nome: "Rodrigo C\xE9zar"
   planos: []
