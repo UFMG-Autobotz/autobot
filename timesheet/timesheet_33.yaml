@@ -2,7 +2,7 @@ barbara-almeida:
   atividades:
   - [1.5, !!python/unicode 'Seguir tutoriais do Gazebo']
   - [1.0, "organiza\xE7\xE3o da sede"]
-  - [4.0, "tentar importar rob\xF4 para o simulator"]
+  - [5.0, "tentar importar rob\xF4 para o simulator"]
   - [1.0, "reuni\xE3o da navega\xE7\xE3o"]
   - [1.5, "reuni\xE3o da equipe"]
   comments: ''
@@ -42,7 +42,8 @@ elisa-bacelar:
   nome: Elisa Bacelar
   planos: []
 jonatan:
-  atividades: []
+  atividades:
+  - [1.0, !!python/unicode 'Projetar placa para o VT']
   comments: ''
   nome: Jonatan Campos
   planos: []
