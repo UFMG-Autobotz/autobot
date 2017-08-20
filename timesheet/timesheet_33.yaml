@@ -147,7 +147,9 @@ thiago-lages:
   comments: ''
   nome: Thiago Lages
   planos: ["Medi\xE7\xE3o da for\xE7a gerada pelos propulsores do barco no Lex, se\
-      \ poss\xEDvel junto ao Josu\xE9 e/ou outro(s) membro(s) disposto(s)"]
+      \ poss\xEDvel junto ao Josu\xE9 e/ou outro(s) membro(s) disposto(s)", "Terminar\
+      \ de relacionar as vari\xE1veis de controle utilizadas pelo artigo com as informa\xE7\
+      \xF5es que podemos obter via sensores"]
 victor-castro:
   atividades:
   - [4.0, !!python/unicode 'Solucionados maiores "warnings" em VSS-Simulator-ROS']
