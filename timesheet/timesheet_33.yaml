@@ -39,7 +39,8 @@ daniel-leite:
       melhorias na HAMS', "Testar c\xF3digo do joystick utilizando o barco", "Testar\
       \ biblioteca de r\xE1dio nos m\xF3dulos da sede"]
 elisa-bacelar:
-  atividades: []
+  atividades:
+  - [3.0, "Instala\xE7\xE3o das ferramentas"]
   comments: ''
   nome: Elisa Bacelar
   planos: []
