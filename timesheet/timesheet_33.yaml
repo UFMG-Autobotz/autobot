@@ -106,6 +106,7 @@ renan.cvr:
   - [3.0, !!python/unicode 'tutorial de montagem no Inventor']
   - [2.0, "redesenhar pe\xE7as do chassi"]
   - [1.0, "reuni\xE3o da mec\xE2nica"]
+  - [2.0, !!python/unicode 'projeto inicial de suporte para bateria']
   comments: ''
   nome: Renan Costa
   planos: []
