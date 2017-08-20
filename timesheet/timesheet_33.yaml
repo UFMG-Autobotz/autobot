@@ -146,7 +146,8 @@ thiago-lages:
   - [2.0, "Reuni\xE3o Geral"]
   comments: ''
   nome: Thiago Lages
-  planos: []
+  planos: ["Medi\xE7\xE3o da for\xE7a gerada pelos propulsores do barco no Lex, se\
+      \ poss\xEDvel junto ao Josu\xE9 e/ou outro(s) membro(s) disposto(s)"]
 victor-castro:
   atividades:
   - [4.0, !!python/unicode 'Solucionados maiores "warnings" em VSS-Simulator-ROS']
