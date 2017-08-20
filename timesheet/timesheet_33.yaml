@@ -142,6 +142,8 @@ thiago-lages:
       veis que temos que levar em conta na modelagem, como as velocidades 'surge',\
       \ 'sway' do barco e o torque em torno do eixo Z. C\xE1lculo aproxmado do momento\
       \ de in\xE9rcia do barco, para relacionar torque e acelerac\xE3o angular."]
+  - [1.0, "Reuni\xE3o Navega\xE7\xE3o"]
+  - [2.0, "Reuni\xE3o Geral"]
   comments: ''
   nome: Thiago Lages
   planos: []
