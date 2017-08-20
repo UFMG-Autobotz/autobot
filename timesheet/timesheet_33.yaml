@@ -41,6 +41,8 @@ daniel-leite:
 elisa-bacelar:
   atividades:
   - [3.0, "Instala\xE7\xE3o das ferramentas"]
+  - [4.0, "Pesquisas sobre o qt e tentativa de cria\xE7\xE3o do qt package no ROS"]
+  - [4.0, "Reuni\xF5es Semanais"]
   comments: ''
   nome: Elisa Bacelar
   planos: []
