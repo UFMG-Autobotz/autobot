@@ -103,6 +103,8 @@ renan.cvr:
   atividades:
   - [2.5, "In\xEDcio da prototipagem do VSS"]
   - [1.5, !!python/unicode 'Pesquisa sobre chassi com 3 rodas']
+  - [3.0, !!python/unicode 'tutorial de montagem no Inventor']
+  - [2.0, "redesenhar pe\xE7as do chassi"]
   comments: ''
   nome: Renan Costa
   planos: []
