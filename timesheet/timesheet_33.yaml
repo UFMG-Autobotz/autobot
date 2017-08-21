@@ -8,7 +8,9 @@ barbara-almeida:
   - [3.0, "Atualiza\xE7\xE3o da apresenta\xE7\xE3o para os calouros"]
   comments: ''
   nome: "B\xE1rbara Almeida"
-  planos: ["Importar rob\xF4 com dimens\xF5es corretas"]
+  planos: ["Importar rob\xF4 com dimens\xF5es corretas", "Fazer configura\xE7\xF5\
+      es iniciais da simula\xE7\xE3o", !!python/unicode 'Continuar aprendendo a usar
+      o Gazebo']
 biancamartins:
   atividades: []
   comments: ''
