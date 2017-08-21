@@ -14,7 +14,8 @@ bruno-cerqueira:
   nome: Bruno Cerqueira
   planos: []
 daniel-leite:
-  atividades: []
+  atividades:
+  - [3.0, !!python/unicode 'Testar Circuito LiPo']
   comments: ''
   nome: Daniel Leite
   planos: []
