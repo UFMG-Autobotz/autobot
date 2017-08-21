@@ -125,7 +125,8 @@ rodrigo-cezar:
       \ com vers\xE3o simplificada, modelagem de pe\xE7as)"]
   comments: ''
   nome: "Rodrigo C\xE9zar"
-  planos: []
+  planos: ["Terminar de modelar uma primeira vers\xE3o do Ve\xEDculo Terrestre e iniciar\
+      \ testes"]
 thiago-lages:
   atividades:
   - [2.0, !!python/unicode 'leitura e entendimento do artigo de controle de hovercraft
