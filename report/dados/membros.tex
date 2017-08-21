@@ -4,8 +4,11 @@
 \hline tentar importar robô para o simulator & 5.0 \\
 \hline reunião da navegação & 1.0 \\
 \hline reunião da equipe & 1.5 \\
-\hline Aprender a usar o Gazebo & 2.5 \\}{11.0}
-\planos{}
+\hline Aprender a usar o Gazebo & 2.5 \\
+\hline Atualização da apresentação para os calouros & 3.0 \\}{14.0}
+\planos{\item Importar robô com dimensões corretas
+\item Fazer configurações iniciais da simulação
+\item Continuar aprendendo a usar o Gazebo}
 \comentarios{}
 \end{membro}
 
@@ -33,7 +36,7 @@
 \hline Reunião da eletrônica & 1.5 \\
 \hline Melhorias no código de operação do barco via joystick & 2.5 \\
 \hline Organizar registros do timesheet no GitHub & 1.5 \\
-\hline Adequar desenhos e obter medidas para a equipe do Veículo Terrestre & 2.0 \\}{17.0}
+\hline Adequar desenhos e obter medidas para a equipe do VT & 2.0 \\}{17.0}
 \planos{\item Terminar validação do Circuito LiPo e documentar
 \item Projetar melhorias na HAMS
 \item Testar código do joystick utilizando o barco
@@ -131,10 +134,11 @@
 \nome{Thiago Lages}
 \tarefas{\hline leitura e entendimento do artigo de controle de hovercraft providenciado pelo MACRO & 2.0 \\
 \hline escrita de um documento resumo dos fundamentos e princípios matemáticos utilizados no artigo, verificacão de alguns cálculos e relacao com o que teremos no nosso barco (quais sensores fornecerão quais dados, quais são as variáveis de controle, como as controlaremos, etc) & 1.5 \\
-\hline pesquisa sobre efeito Coriolis (textos e videos) e artigo 'Guidance and Control of Ocean Vehicles', T. I.  Fossen, que fala sobre modelagem de veiculos oceânicos; fazendo algumas simplificacões, desconsiderando efeitos do vento e ondas, e movimentos como roll, pitch (rotacões nos eixos X e Y) e heave (movimento up/down no eixo Z). Sua importância se dá no fato de que é citado no artigo fornecido pelo MACRO para a equipe (cuja modelagem é praticamente toda baseada no artigo do Fossen). Além disso, pensei e discuti com os membros Josué, Daniel e Jonatan sobre medir forca de cada um dos propulsores. Pensamos em medir de alguma maneira (arduino, encoders) a velocidade das hélices e comparar com as tabelas de velocidades do datasheet, utilizar um equipamento do Lex próprio para esse tipo de medicao, entre outros. Fiz cálculos relacionando a forca dos propulsores com as variáveis que temos que levar em conta na modelagem, como as velocidades 'surge', 'sway' do barco e o torque em torno do eixo Z. Cálculo aproxmado do momento de inércia do barco, para relacionar torque e aceleracão angular. & 4.0 \\
+\hline pesquisa sobre efeito Coriolis (textos e videos) e artigo 'Guidance and Control of Ocean Vehicles', T. I.  Fossen, que fala sobre modelagem de veiculos oceânicos; fazendo algumas simplificacões, desconsiderando efeitos do vento e ondas, e movimentos como roll, pitch (rotacões nos eixos X e Y) e heave (movimento up/down no eixo Z). Sua importância se dá no fato de que é citado no artigo fornecido pelo MACRO para a equipe (cuja modelagem é praticamente toda baseada no artigo do Fossen). Além disso, pensei e discuti com os membros Josué, Daniel e Jonatan sobre medir forca de cada um dos propulsores. Pensamos em medir de alguma maneira (arduino, encoders) a velocidade das hélices e comparar com as tabelas de velocidades do datasheet, utilizar um equipamento do Lex próprio para esse tipo de medicao, entre outros. Fiz cálculos relacionando a forca dos propulsores com as variáveis que temos que levar em conta na modelagem, como as velocidades 'surge', 'sway' do barco e o torque em torno do eixo Z. Cálculo aproxmado do momento de inércia do barco, para relacionar torque e aceleracão angular. & 6.0 \\
 \hline Reunião Navegação & 1.0 \\
-\hline Reunião Geral & 2.0 \\}{10.5}
-\planos{}
+\hline Reunião Geral & 2.0 \\}{12.5}
+\planos{\item Medição da força gerada pelos propulsores do barco no Lex, se possível junto ao Josué e/ou outro(s) membro(s) disposto(s)
+\item Terminar de relacionar as variáveis de controle utilizadas pelo artigo com as informações que podemos obter via sensores}
 \comentarios{}
 \end{membro}
 
