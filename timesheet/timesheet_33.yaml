@@ -29,6 +29,7 @@ daniel-leite:
   - [2.5, "Melhorias no c\xF3digo de opera\xE7\xE3o do barco via joystick"]
   - [1.5, !!python/unicode 'Organizar registros do timesheet no GitHub']
   - [2.0, "Adequar desenhos e obter medidas para a equipe do Ve\xEDculo Terrestre"]
+  - [2.0, !!python/unicode 'Adequar desenhos e obter medidas para a equipe do VT']
   comments: "A falta de fonte sim\xE9trica ainda est\xE1 atrapalhando os testes no\
     \ circuito LiPo, mas os principais defeitos da placa j\xE1 foram corrigidos. Fiz\
     \ alguns pequenos testes nos laborat\xF3rios da Eng.\nA HAMS est\xE1 funcionando\
@@ -37,8 +38,7 @@ daniel-leite:
     \ Ve\xEDculo Terrestre."
   nome: Daniel Leite
   planos: ["Terminar valida\xE7\xE3o do Circuito LiPo e documentar", !!python/unicode 'Projetar
-      melhorias na HAMS', "Testar c\xF3digo do joystick utilizando o barco", "Testar\
-      \ biblioteca de r\xE1dio nos m\xF3dulos da sede"]
+      melhorias na HAMS', "Testar c\xF3digo do joystick utilizando o barco"]
 elisa-bacelar:
   atividades:
   - [3.0, "Instala\xE7\xE3o das ferramentas"]
