@@ -19,7 +19,8 @@ daniel-leite:
   nome: Daniel Leite
   planos: []
 elisa-bacelar:
-  atividades: []
+  atividades:
+  - [3.5, "Compila\xE7\xE3o do package do Vision"]
   comments: ''
   nome: Elisa Bacelar
   planos: []
