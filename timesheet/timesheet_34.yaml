@@ -32,7 +32,8 @@ jonatan:
   nome: Jonatan Campos
   planos: []
 josuehfa:
-  atividades: []
+  atividades:
+  - [1.0, "Calculo referentes ao bra\xE7o da plataforma terrestre"]
   comments: ''
   nome: "Josu\xE9 Henrique"
   planos: []
