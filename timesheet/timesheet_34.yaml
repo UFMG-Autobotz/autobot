@@ -43,7 +43,9 @@ josuehfa:
   nome: "Josu\xE9 Henrique"
   planos: []
 marimeireles:
-  atividades: []
+  atividades:
+  - [1.0, !!python/unicode 'estudando arduino']
+  - [2.0, !!python/unicode 'estudando cpp']
   comments: ''
   nome: Mariana Meireles
   planos: []
