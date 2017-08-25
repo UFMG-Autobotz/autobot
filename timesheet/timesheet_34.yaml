@@ -16,7 +16,7 @@ bruno-cerqueira:
 daniel-leite:
   atividades:
   - [6.0, !!python/unicode 'Testar Circuito LiPo']
-  - [1.0, "Pesquisar funcionamento de encoder magn\xE9tico para o VT"]
+  - [5.0, !!python/unicode 'Diagnosticar e reparar Circuito LiPo']
   comments: ''
   nome: Daniel Leite
   planos: []
