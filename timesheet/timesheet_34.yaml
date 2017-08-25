@@ -46,6 +46,7 @@ marimeireles:
   atividades:
   - [1.0, !!python/unicode 'estudando arduino']
   - [2.0, !!python/unicode 'estudando cpp']
+  - [0.5, !!python/unicode 'fazendo circuito e entendendo o L298']
   comments: ''
   nome: Mariana Meireles
   planos: []
