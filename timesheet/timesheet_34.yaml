@@ -49,6 +49,8 @@ marimeireles:
   - [1.0, !!python/unicode 'estudando arduino']
   - [2.0, !!python/unicode 'estudando cpp']
   - [0.5, !!python/unicode 'fazendo circuito e entendendo o L298']
+  - [2.5, "reuni\xE3o da equipe"]
+  - [2.0, !!python/unicode 'testando biblioteca criada por mim na ponte h']
   comments: ''
   nome: Mariana Meireles
   planos: []
