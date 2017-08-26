@@ -51,6 +51,7 @@ marimeireles:
   - [0.5, !!python/unicode 'fazendo circuito e entendendo o L298']
   - [2.5, "reuni\xE3o da equipe"]
   - [2.0, !!python/unicode 'testando biblioteca criada por mim na ponte h']
+  - [4.0, !!python/unicode 'concertando problemas derivados da biblioteca']
   comments: ''
   nome: Mariana Meireles
   planos: []
