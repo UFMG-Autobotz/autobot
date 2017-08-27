@@ -91,6 +91,7 @@ renan.cvr:
   - [1.0, "montagem inicial do prot\xF3tipo"]
   - [1.0, "elabora\xE7\xE3o do cronograma do VSS"]
   - [2.0, "finaliza\xE7\xE3o do suporte da bateria e altera\xE7\xF5es na placa superior"]
+  - [1.0, !!python/unicode 'exportar arquivos do autocad para o inventor']
   comments: ''
   nome: Renan Costa
   planos: []
