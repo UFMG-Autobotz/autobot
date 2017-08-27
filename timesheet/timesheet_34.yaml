@@ -4,7 +4,9 @@ barbara-almeida:
   nome: "B\xE1rbara Almeida"
   planos: []
 biancamartins:
-  atividades: []
+  atividades:
+  - [8.0, "Montar circuito de regulador de tens\xE3o para alimentar o galileo, pesquisar\
+      \ e come\xE7ar a instalar o debian"]
   comments: ''
   nome: Bianca Martins
   planos: []
