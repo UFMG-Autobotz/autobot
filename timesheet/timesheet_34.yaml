@@ -12,7 +12,8 @@ biancamartins:
   - [1.5, "brainstorm sobre melhorias no projeto da HAMS e in\xEDcio do layout"]
   comments: ''
   nome: Bianca Martins
-  planos: [": Resolver os problemas da instala\xE7\xE3o do debian"]
+  planos: [": Resolver os problemas da instala\xE7\xE3o do debian", !!python/unicode ':
+      Terminar o layout revisado da HAMS']
 bruno-cerqueira:
   atividades:
   - [3.0, "desenho de pe\xE7as"]
@@ -110,4 +111,5 @@ victor-castro:
   - [2.5, "Reuni\xE3o Geral"]
   comments: ''
   nome: Victor Castro
-  planos: []
+  planos: [": \xDAltima semana de trabalho com o simulador atual; em caso de fracasso,\
+      \ iniciarei a constru\xE7\xE3o de um novo."]
