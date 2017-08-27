@@ -81,7 +81,8 @@ thiago-lages:
   nome: Thiago Lages
   planos: []
 victor-castro:
-  atividades: []
+  atividades:
+  - [8.25, "Investigando o erro de execu\xE7\xE3o do VSS-Simulator-ROS"]
   comments: ''
   nome: Victor Castro
   planos: []
