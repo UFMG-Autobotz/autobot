@@ -12,8 +12,8 @@ biancamartins:
   - [1.5, "brainstorm sobre melhorias no projeto da HAMS e in\xEDcio do layout"]
   comments: ''
   nome: Bianca Martins
-  planos: [": Resolver os problemas da instala\xE7\xE3o do debian", !!python/unicode ':
-      Terminar o layout revisado da HAMS']
+  planos: [!!python/unicode ': Terminar o layout revisado da HAMS', "Resolver os problemas\
+      \ da instala\xE7\xE3o do debian"]
 bruno-cerqueira:
   atividades:
   - [3.0, "desenho de pe\xE7as"]
@@ -92,6 +92,8 @@ renan.cvr:
   - [1.0, "elabora\xE7\xE3o do cronograma do VSS"]
   - [2.0, "finaliza\xE7\xE3o do suporte da bateria e altera\xE7\xF5es na placa superior"]
   - [1.0, !!python/unicode 'exportar arquivos do autocad para o inventor']
+  - [2.5, !!python/unicode 'desenho das rodas e da bateria no inventor']
+  - [1.5, "in\xEDcio de projeto da pe\xE7a de chute"]
   comments: ''
   nome: Renan Costa
   planos: []
