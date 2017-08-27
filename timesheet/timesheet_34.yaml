@@ -43,6 +43,7 @@ jonatan:
   - [2.0, "Reuni\xE3o Autobotz"]
   - [0.5, "Reuni\xE3o da Mec\xE2nica"]
   - [0.5, !!python/unicode 'Fazer conectores']
+  - [2.5, !!python/unicode 'Brainstorm sobre o VT']
   comments: ''
   nome: Jonatan Campos
   planos: []
