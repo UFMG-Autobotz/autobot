@@ -81,9 +81,7 @@ thiago-lages:
   nome: Thiago Lages
   planos: []
 victor-castro:
-  atividades:
-  - [8.25, "Investigando o erro de execu\xE7\xE3o do Simulator causado pela biblioteca\
-      \ Bullet Physics modificada"]
+  atividades: []
   comments: ''
   nome: Victor Castro
   planos: []
