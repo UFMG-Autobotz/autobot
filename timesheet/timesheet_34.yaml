@@ -8,6 +8,7 @@ biancamartins:
   - [8.0, "Montar circuito de regulador de tens\xE3o para alimentar o galileo, pesquisar\
       \ e come\xE7ar a instalar o debian"]
   - [2.0, !!python/unicode '30']
+  - [1.0, !!python/unicode '30']
   comments: ''
   nome: Bianca Martins
   planos: []
