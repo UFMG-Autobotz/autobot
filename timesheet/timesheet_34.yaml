@@ -9,11 +9,10 @@ biancamartins:
       \ tens\xE3o"]
   - [4.5, "Pesquisar e iniciar a instala\xE7\xE3o do debian no galileo"]
   - [2.5, "Reuni\xF5es geral e Eletr\xF4nica"]
-  - [1.5, "brainstorm sobre melhorias no projeto da HAMS e in\xEDcio do layout"]
   comments: ''
   nome: Bianca Martins
-  planos: [!!python/unicode ': Terminar o layout revisado da HAMS', "Resolver os problemas\
-      \ da instala\xE7\xE3o do debian"]
+  planos: ["Resolver os problemas da instala\xE7\xE3o do debian", !!python/unicode 'Terminar
+      o layout revisado da HAMS']
 bruno-cerqueira:
   atividades:
   - [3.0, "desenho de pe\xE7as"]
@@ -112,6 +111,8 @@ victor-castro:
   - [8.25, "Investigando o erro de execu\xE7\xE3o do VSS-Simulator-ROS"]
   - [0.5, "Reuni\xE3o da Navega\xE7\xE3o"]
   - [2.5, "Reuni\xE3o Geral"]
+  - [0.5, "Pesquisa inicial a respeito da constru\xE7\xE3o de um novo simulador para\
+      \ o VSS-SDK-ROS"]
   comments: ''
   nome: Victor Castro
   planos: [": \xDAltima semana de trabalho com o simulador atual; em caso de fracasso,\
