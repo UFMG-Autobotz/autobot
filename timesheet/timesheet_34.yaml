@@ -9,7 +9,8 @@ biancamartins:
   nome: Bianca Martins
   planos: []
 bruno-cerqueira:
-  atividades: []
+  atividades:
+  - [3.0, "desenho de pe\xE7as"]
   comments: ''
   nome: Bruno Cerqueira
   planos: []
