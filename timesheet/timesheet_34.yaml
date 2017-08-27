@@ -41,6 +41,8 @@ jonatan:
   atividades:
   - [5.0, "Projetar pe\xE7as do VT"]
   - [2.0, "Reuni\xE3o Autobotz"]
+  - [0.5, "Reuni\xE3o da Mec\xE2nica"]
+  - [0.5, !!python/unicode 'Fazer conectores']
   comments: ''
   nome: Jonatan Campos
   planos: []
