@@ -102,6 +102,10 @@ rodrigo-cezar:
   - [0.5, "Reuni\xE3o da Navega\xE7\xE3o"]
   - [2.5, "Reuni\xE3o da Equipe"]
   - [0.5, !!python/unicode 'Conversas individuais com membros (RH)']
+  - [1.0, !!python/unicode 'Tutoriais de gazebo']
+  - [3.0, "Ajustes na modelagem das pe\xE7as do VT"]
+  - [9.0, "Fazer uma vers\xE3o preliminar do plugin para interagir com o modelo via\
+      \ ROS (escrever o c\xF3digo e consertar erros de execu\xE7\xE3o)"]
   comments: ''
   nome: "Rodrigo C\xE9zar"
   planos: []
