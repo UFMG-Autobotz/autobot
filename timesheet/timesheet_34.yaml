@@ -98,7 +98,10 @@ renan.cvr:
   nome: Renan Costa
   planos: []
 rodrigo-cezar:
-  atividades: []
+  atividades:
+  - [0.5, "Reuni\xE3o da Navega\xE7\xE3o"]
+  - [2.5, "Reuni\xE3o da Equipe"]
+  - [0.5, !!python/unicode 'Conversas individuais com membros (RH)']
   comments: ''
   nome: "Rodrigo C\xE9zar"
   planos: []
