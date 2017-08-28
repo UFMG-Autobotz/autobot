@@ -40,7 +40,9 @@ daniel-leite:
     N\xE3o houve tempo de trabalhar na opera\xE7\xE3o do barco via joystick, mas dedicarei\
     \ esta pr\xF3xima semana a isso."
   nome: Daniel Leite
-  planos: []
+  planos: [!!python/unicode 'Documentar Circuito LiPo', !!python/unicode 'Projetar
+      melhorias para o Circuito LiPo', "Testar c\xF3digo de joystick utilizando o\
+      \ barco"]
 elisa-bacelar:
   atividades:
   - [8.5, "Compila\xE7\xE3o do package do Vision"]
