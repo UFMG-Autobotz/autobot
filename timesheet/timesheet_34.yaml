@@ -130,6 +130,9 @@ thiago-lages:
       \ do motor do barco, retornar\xE1 valores de for\xE7a gerado por ele (depois\
       \ das medi\xE7\xF5es), e fornecer\xE1 esse dado para a fun\xE7\xE3o da modelagem\
       \ do barco, que determinar\xE1 sua posi\xE7\xE3o (x,y) e orienta\xE7\xE3o (phi)"]
+  - [0.5, !!python/unicode 'Olhar possibilidade de trabalhar com as modelagens feitas
+      utilizando Gazebo']
+  - [0.5, "Olhar polls poss\xEDveis para se aplicar na equipe para escolha de pautas"]
   comments: ''
   nome: Thiago Lages
   planos: []
