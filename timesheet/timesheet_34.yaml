@@ -126,6 +126,10 @@ thiago-lages:
   - [4.0, "Reler partes do artigo, entender vari\xE1veis matriciais que estavam faltando,\
       \ terminar de calcular/pensar maneiras de calcular momento de in\xE9rcia do\
       \ barco"]
+  - [1.0, "Come\xE7ar a escrever c\xF3digo modularizado que receber\xE1 dados de velocidade\
+      \ do motor do barco, retornar\xE1 valores de for\xE7a gerado por ele (depois\
+      \ das medi\xE7\xF5es), e fornecer\xE1 esse dado para a fun\xE7\xE3o da modelagem\
+      \ do barco, que determinar\xE1 sua posi\xE7\xE3o (x,y) e orienta\xE7\xE3o (phi)"]
   comments: ''
   nome: Thiago Lages
   planos: []
