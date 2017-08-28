@@ -35,7 +35,10 @@ daniel-leite:
   - [1.0, "Pesquisar funcionamento de encoder magn\xE9tico para o VT"]
   - [0.5, !!python/unicode 'Organizar LEDs da sede']
   - [2.5, "Reuni\xE3o semanal"]
-  comments: !!python/unicode 'Finalmente o Circuito LiPo ficou pronto!'
+  comments: "Agora que a vers\xE3o atual do Circuito LiPo funciona, falta implementar\
+    \ as melhorias para a nova vers\xE3o, que ser\xE1 usada no Ve\xEDculo Terrestre.\n\
+    N\xE3o houve tempo de trabalhar na opera\xE7\xE3o do barco via joystick, mas dedicarei\
+    \ esta pr\xF3xima semana a isso."
   nome: Daniel Leite
   planos: []
 elisa-bacelar:
