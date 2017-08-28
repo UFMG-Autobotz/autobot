@@ -118,7 +118,9 @@ rodrigo-cezar:
   nome: "Rodrigo C\xE9zar"
   planos: []
 thiago-lages:
-  atividades: []
+  atividades:
+  - [1.0, "Reuni\xE3o Navega\xE7\xE3o"]
+  - [2.5, "Reuni\xE3o Equipe"]
   comments: ''
   nome: Thiago Lages
   planos: []
