@@ -80,7 +80,10 @@ marimeireles:
   nome: Mariana Meireles
   planos: []
 pedro:
-  atividades: []
+  atividades:
+  - [4.0, "Preparar apresenta\xE7\xF5es de aulas de calouros. Apresentar. Ensaiar\
+      \ com B\xE1rbara, Mariana e Bianca."]
+  - [1.0, "Pesquisar sobre op\xE7\xF5es de reviver a wiki"]
   comments: ''
   nome: Pedro Blanc
   planos: []
