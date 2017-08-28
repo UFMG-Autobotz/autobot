@@ -88,6 +88,7 @@ pedro:
       \ esteira"]
   - [4.0, !!python/unicode 'Retirar componentes de placas da sucata para jogar as
       placas no lixo']
+  - [1.0, "Testar c\xF3digo do barco de leitura dos ultrassons"]
   comments: ''
   nome: Pedro Blanc
   planos: []
