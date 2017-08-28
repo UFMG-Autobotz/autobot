@@ -122,7 +122,7 @@ thiago-lages:
   - [1.0, "Reuni\xE3o Navega\xE7\xE3o"]
   - [2.5, "Reuni\xE3o Equipe"]
   - [0.5, "Desmontar propulsores para medi\xE7\xE3o no LEX"]
-  - [1.0, "Prepara\xE7\xE3o dos slides para apresenta\xE7\xE3o semanal"]
+  - [1.5, "Prepara\xE7\xE3o dos slides para apresenta\xE7\xE3o semanal"]
   - [4.0, "Reler partes do artigo, entender vari\xE1veis matriciais que estavam faltando,\
       \ terminar de calcular/pensar maneiras de calcular momento de in\xE9rcia do\
       \ barco"]
@@ -133,6 +133,7 @@ thiago-lages:
   - [0.5, !!python/unicode 'Olhar possibilidade de trabalhar com as modelagens feitas
       utilizando Gazebo']
   - [0.5, "Olhar polls poss\xEDveis para se aplicar na equipe para escolha de pautas"]
+  - [5.0, !!python/unicode '3.5']
   comments: ''
   nome: Thiago Lages
   planos: []
