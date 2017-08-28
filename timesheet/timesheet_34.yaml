@@ -42,7 +42,8 @@ daniel-leite:
   nome: Daniel Leite
   planos: [!!python/unicode 'Documentar Circuito LiPo', !!python/unicode 'Projetar
       melhorias para o Circuito LiPo', "Testar c\xF3digo de joystick utilizando o\
-      \ barco"]
+      \ barco", "Estudar a implementa\xE7\xE3o de encoder magn\xE9tico no Ve\xEDculo\
+      \ Terrestre"]
 elisa-bacelar:
   atividades:
   - [8.5, "Compila\xE7\xE3o do package do Vision"]
