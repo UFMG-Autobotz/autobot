@@ -133,7 +133,6 @@ thiago-lages:
   - [0.5, !!python/unicode 'Olhar possibilidade de trabalhar com as modelagens feitas
       utilizando Gazebo']
   - [0.5, "Olhar polls poss\xEDveis para se aplicar na equipe para escolha de pautas"]
-  - [5.0, !!python/unicode '3.5']
   comments: ''
   nome: Thiago Lages
   planos: []
