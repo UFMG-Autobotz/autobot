@@ -16,7 +16,8 @@ bruno-cerqueira:
   nome: Bruno Cerqueira
   planos: []
 daniel-leite:
-  atividades: []
+  atividades:
+  - [2.5, "Manuten\xE7\xE3o no barco"]
   comments: ''
   nome: Daniel Leite
   planos: []
