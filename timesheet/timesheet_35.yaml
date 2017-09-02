@@ -25,7 +25,9 @@ daniel-leite:
   atividades:
   - [6.5, "Manuten\xE7\xE3o no barco"]
   - [4.5, !!python/unicode 'Organizar a sede']
-  comments: ''
+  comments: "Na hora de testar o c\xF3digo do Joystick, vi que alguns aspectos da\
+    \ eletr\xF4nica e mec\xE2nica do barco n\xE3o estavam mais funcionando bem. Portanto,\
+    \ tive que repar\xE1-los e fazer alguns testes."
   nome: Daniel Leite
   planos: []
 elisa-bacelar:
