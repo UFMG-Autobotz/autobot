@@ -83,4 +83,5 @@ victor-castro:
   - [2.0, "Produ\xE7\xE3o de conte\xFAdo para redes sociais da Autobotz"]
   comments: ''
   nome: Victor Castro
-  planos: [": Testar uma placa-m\xE3e de CPU fixo encontrada na sede;"]
+  planos: [": Testar uma placa-m\xE3e de CPU fixo encontrada na sede;", ": Concertar\
+      \ bugs e explorar poss\xEDveis melhorias para o VSS-Simulator-ROS"]
