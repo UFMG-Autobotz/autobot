@@ -32,9 +32,9 @@ daniel-leite:
   planos: []
 elisa-bacelar:
   atividades:
-  - [9.0, "Compil\xE7\xE3o Vision"]
+  - [10.0, "Compil\xE7\xE3o Vision"]
   - [1.0, "Reuni\xE3o da navega\xE7\xE3o"]
-  - [1.0, !!python/unicode 'Tirar foto']
+  - [1.5, !!python/unicode 'Tirar foto']
   comments: ''
   nome: Elisa Bacelar
   planos: []
