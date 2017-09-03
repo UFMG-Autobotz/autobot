@@ -72,7 +72,10 @@ thiago-lages:
   nome: Thiago Lages
   planos: []
 victor-castro:
-  atividades: []
+  atividades:
+  - [3.5, "Concertando o computador da sede - Fracasso! - Necessito de outras pe\xE7\
+      as para teste. H\xE1 um problema com a fonte, e instabilidade com CPU ou placa-m\xE3\
+      e. Houveram duas inicializa\xE7\xF5es corretas apenas."]
   comments: ''
   nome: Victor Castro
   planos: []
