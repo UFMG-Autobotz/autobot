@@ -76,6 +76,8 @@ victor-castro:
   - [3.5, "Concertando o computador da sede - Fracasso! - Necessito de outras pe\xE7\
       as para teste. H\xE1 um problema com a fonte, e instabilidade com CPU ou placa-m\xE3\
       e. Houveram duas inicializa\xE7\xF5es corretas apenas."]
+  - [3.5, "Tentando reparar a execu\xE7\xE3o do VSS-Simulator-ROS - Sucesso! - Mas\
+      \ ainda existem bugs."]
   comments: ''
   nome: Victor Castro
   planos: []
