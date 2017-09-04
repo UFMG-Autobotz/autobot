@@ -66,7 +66,9 @@ pedro:
   nome: Pedro Blanc
   planos: []
 renan.cvr:
-  atividades: []
+  atividades:
+  - [2.0, "detalhamento de pe\xE7as no Inventor"]
+  - [2.0, "transfer\xEAncias de arquivos autoCAD p/ o Inventor"]
   comments: ''
   nome: Renan Costa
   planos: []
