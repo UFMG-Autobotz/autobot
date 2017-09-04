@@ -17,7 +17,9 @@ biancamartins:
   nome: Bianca Martins
   planos: []
 bruno-cerqueira:
-  atividades: []
+  atividades:
+  - [3.5, !!python/unicode 'detalhamento do motor']
+  - [0.5, "estudo de viabiliza\xE7\xE3o Trofeu Solid\xE1rio"]
   comments: ''
   nome: Bruno Cerqueira
   planos: []
@@ -30,7 +32,7 @@ daniel-leite:
     \ eletr\xF4nica e mec\xE2nica do barco n\xE3o estavam mais funcionando bem. Portanto,\
     \ tive que repar\xE1-los e fazer alguns testes."
   nome: Daniel Leite
-  planos: []
+  planos: [!!python/unicode 'Continuar reparos no barco', "Testar o c\xF3digo de joystick"]
 elisa-bacelar:
   atividades:
   - [10.0, "Compil\xE7\xE3o Vision"]
