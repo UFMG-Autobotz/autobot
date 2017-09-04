@@ -46,7 +46,8 @@ elisa-bacelar:
   nome: Elisa Bacelar
   planos: []
 jonatan:
-  atividades: []
+  atividades:
+  - [2.0, "produ\xE7\xE3o de conte\xFAdo para redes sociais"]
   comments: ''
   nome: Jonatan Campos
   planos: []
