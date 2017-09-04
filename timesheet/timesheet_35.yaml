@@ -20,6 +20,8 @@ bruno-cerqueira:
   atividades:
   - [3.5, !!python/unicode 'detalhamento do motor']
   - [0.5, "estudo de viabiliza\xE7\xE3o Trofeu Solid\xE1rio"]
+  - [0.5, "registro de material para comunica\xE7\xE3o"]
+  - [2.5, "confec\xE7\xE3o de montagem e detalhamento no Inventor"]
   comments: ''
   nome: Bruno Cerqueira
   planos: []
@@ -32,7 +34,8 @@ daniel-leite:
     \ eletr\xF4nica e mec\xE2nica do barco n\xE3o estavam mais funcionando bem. Portanto,\
     \ tive que repar\xE1-los e fazer alguns testes."
   nome: Daniel Leite
-  planos: [!!python/unicode 'Continuar reparos no barco', "Testar o c\xF3digo de joystick"]
+  planos: [!!python/unicode 'Continuar reparos no barco', "Testar o c\xF3digo de joystick",
+    "Continuar documenta\xE7\xE3o da {\\tt Radio.h} e test\xE1-la"]
 elisa-bacelar:
   atividades:
   - [10.0, "Compil\xE7\xE3o Vision"]
