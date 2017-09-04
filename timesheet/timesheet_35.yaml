@@ -81,7 +81,9 @@ rodrigo-cezar:
   nome: "Rodrigo C\xE9zar"
   planos: []
 thiago-lages:
-  atividades: []
+  atividades:
+  - [1.0, "C\xF3digo de obten\xE7\xE3o de vari\xE1veis de controle do barco a partir\
+      \ da velocidade de rota\xE7\xE3o das h\xE9lices"]
   comments: ''
   nome: Thiago Lages
   planos: []
