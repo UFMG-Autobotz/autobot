@@ -21,7 +21,8 @@ daniel-leite:
   nome: Daniel Leite
   planos: []
 elisa-bacelar:
-  atividades: []
+  atividades:
+  - [2.0, !!python/unicode 'Estudo do QtCreator']
   comments: ''
   nome: Elisa Bacelar
   planos: []
