@@ -26,6 +26,7 @@ elisa-bacelar:
   atividades:
   - [2.0, !!python/unicode 'Estudo do QtCreator']
   - [1.0, "Instala\xE7\xE3o do ROS Qt Creator Plug-in"]
+  - [2.5, "Utiliza\xE7\xE3o do plug-in no Qt Creator com o pacote do Vision"]
   comments: ''
   nome: Elisa Bacelar
   planos: []
