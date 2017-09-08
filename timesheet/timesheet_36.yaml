@@ -25,6 +25,7 @@ daniel-leite:
 elisa-bacelar:
   atividades:
   - [2.0, !!python/unicode 'Estudo do QtCreator']
+  - [1.0, "Instala\xE7\xE3o do ROS Qt Creator Plug-in"]
   comments: ''
   nome: Elisa Bacelar
   planos: []
