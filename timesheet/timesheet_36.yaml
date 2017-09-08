@@ -65,7 +65,9 @@ thiago-lages:
   nome: Thiago Lages
   planos: []
 victor-castro:
-  atividades: []
+  atividades:
+  - [1.5, "Otimizado o VSS-SDK-ROS em geral - Redu\xE7\xE3o de 100% de uso de CPU\
+      \ para 20% ao executar o Viewer, Simulator e Sample simultaneamente."]
   comments: ''
   nome: Victor Castro
   planos: []
