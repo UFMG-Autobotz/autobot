@@ -9,13 +9,6 @@ from slackclient import SlackClient
 from git import Repo
 from socket import error as SocketError
 
-teste_listar = os.listdir('/home/rodrigo/')
-file_listar = open('/home/rodrigo/Dropbox/Autobotz/slack/testfile_listar.txt','w')
-for item in teste_listar:
-	file_listar.write(item)
-	file_listar.write('\n')
-file_listar.close()
-
 user_dict = {
 	'U5ALA8Y4V': 'admin',
 	'U6B1LBESW': 'autobot',
