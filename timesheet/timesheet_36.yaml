@@ -4,6 +4,8 @@ barbara-almeida:
   - [3.0, "Pesquisar sobre rob\xF4s de outras equipes que competem no Trekking"]
   - [1.0, "reuni\xE3o da navega\xE7\xE3o"]
   - [2.0, "Inventario de itens da sede + verificar devolu\xE7ao de itens"]
+  - [20.0, "Seguir tutoriais do Gazebo, pesquisar sobre atrito no Gazebo, estudar\
+      \ plugins e conex\xE3o do Gazebo com ROS, fazer testes com atrito no Gazebo"]
   comments: ''
   nome: "B\xE1rbara Almeida"
   planos: []
