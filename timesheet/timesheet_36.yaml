@@ -26,7 +26,8 @@ biancamartins:
   - [0.5, "Reuni\xE3o eletr\xF4nica"]
   comments: ''
   nome: Bianca Martins
-  planos: [!!python/unicode ': Terminar layout da HAMS']
+  planos: [!!python/unicode ': Terminar layout da HAMS', ": Terminar instala\xE7\xE3\
+      o Debian no Galileo"]
 bruno-cerqueira:
   atividades: []
   comments: ''
