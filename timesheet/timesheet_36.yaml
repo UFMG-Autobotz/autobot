@@ -69,7 +69,8 @@ victor-castro:
   atividades:
   - [2.0, "Otimizado o VSS-SDK-ROS em geral - Redu\xE7\xE3o de 100% de uso de CPU\
       \ para 20% ao executar o Viewer, Simulator e Sample simultaneamente."]
-  - [6.0, !!python/unicode 'Debugando o VSS-Simulator-ROS']
+  - [8.0, !!python/unicode 'Debugando o VSS-Simulator-ROS']
+  - [1.0, "Reuni\xE3o da Navega\xE7\xE3o"]
   comments: ''
   nome: Victor Castro
   planos: []
