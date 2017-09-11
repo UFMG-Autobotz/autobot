@@ -5,6 +5,8 @@ barbara-almeida:
   - [2.0, "Inventario de itens da sede + verificar devolu\xE7ao de itens"]
   - [20.0, "Seguir tutoriais do Gazebo, pesquisar sobre atrito no Gazebo, estudar\
       \ plugins e conex\xE3o do Gazebo com ROS, fazer testes com atrito no Gazebo"]
+  - [1.0, !!python/unicode 'Estudar GUI criada pelo Rodrigo pra enviar/receber comandos
+      do Gazebo']
   comments: "Depois de ter bastante dificuldade com testes de formas de simula\xE7\
     \xE3o no barco no fim de semana decidi voltar um pouco atr\xE1s e estudar mais\
     \ o funcionamento do Gazebo. Aprendi a criar modelos parametriz\xE1veis, a mover\
