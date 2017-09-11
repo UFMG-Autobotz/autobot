@@ -34,7 +34,7 @@ daniel-leite:
   - [2.5, "Manuten\xE7\xE3o no barco"]
   comments: ''
   nome: Daniel Leite
-  planos: []
+  planos: [!!python/unicode 'Continuar reparos no barco']
 elisa-bacelar:
   atividades:
   - [2.0, !!python/unicode 'Estudo do QtCreator']
