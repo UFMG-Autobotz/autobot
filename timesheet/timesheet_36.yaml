@@ -61,7 +61,8 @@ marimeireles:
   nome: Mariana Meireles
   planos: []
 pedro:
-  atividades: []
+  atividades:
+  - [1.0, "Teste da fia\xE7\xE3o do ultrassom"]
   comments: ''
   nome: Pedro Blanc
   planos: []
@@ -75,6 +76,8 @@ rodrigo-cezar:
   - [18.0, "Cria\xE7\xE3o da telemetria do gazebo"]
   - [3.0, "Pesquisas sobre acionamentos de velocidade e for\xE7a no gazebo"]
   - [1.0, "Reuni\xE3o da Navega\xE7\xE3o"]
+  - [2.0, "Testes dos efeitos de mudan\xE7as dos par\xE2metros f\xEDsicos de um modelo\
+      \ na simula\xE7\xE3o do gazebo"]
   comments: ''
   nome: "Rodrigo C\xE9zar"
   planos: []
