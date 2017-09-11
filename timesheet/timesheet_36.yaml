@@ -71,6 +71,12 @@ victor-castro:
       \ para 20% ao executar o Viewer, Simulator e Sample simultaneamente."]
   - [8.0, !!python/unicode 'Debugando o VSS-Simulator-ROS']
   - [1.0, "Reuni\xE3o da Navega\xE7\xE3o"]
-  comments: ''
+  comments: "Nesta semana, rodei a estrat\xE9gia em C++ desenvolvida no Trainee 2017\
+    \ no VSS-Simulator-ROS a fim de test\xE1-lo. Pensei que com a solu\xE7\xE3o do\
+    \ grande bug que causava o desaparecimento dos rob\xF4s, poderiamos come\xE7ar\
+    \ a desenvolver uma estrat\xE9gia s\xF3lida. Por\xE9m, foram encontrados bugs\
+    \ com as mesmas propor\xE7\xF5es do anterior. Ent\xE3o, novamente gastarei mais\
+    \ algumas horas tentando resolver na pr\xF3xima semana, e em caso de fracasso,\
+    \ iniciarei o desenvolvimento de um novo simulador."
   nome: Victor Castro
   planos: []
