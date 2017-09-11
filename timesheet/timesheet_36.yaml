@@ -86,7 +86,8 @@ rodrigo-cezar:
       \ na simula\xE7\xE3o do gazebo"]
   comments: ''
   nome: "Rodrigo C\xE9zar"
-  planos: []
+  planos: ["Terminar a GUI e atualizar o template de Plugin para receber e enviar\
+      \ as informa\xE7\xF5es desejadas para ela"]
 thiago-lages:
   atividades: []
   comments: ''
