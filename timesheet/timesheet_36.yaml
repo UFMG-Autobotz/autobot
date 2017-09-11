@@ -34,7 +34,8 @@ daniel-leite:
   - [2.5, "Manuten\xE7\xE3o no barco"]
   comments: ''
   nome: Daniel Leite
-  planos: [!!python/unicode 'Continuar reparos no barco']
+  planos: [!!python/unicode 'Continuar reparos no barco', "Testar o c\xF3digo de joystick",
+    "Continuar documenta\xE7\xE3o da {\\tt Radio.h} e test\xE1-la"]
 elisa-bacelar:
   atividades:
   - [2.0, !!python/unicode 'Estudo do QtCreator']
