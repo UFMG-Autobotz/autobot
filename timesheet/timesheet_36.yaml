@@ -7,7 +7,7 @@ barbara-almeida:
       \ plugins e conex\xE3o do Gazebo com ROS, fazer testes com atrito no Gazebo"]
   comments: ''
   nome: "B\xE1rbara Almeida"
-  planos: []
+  planos: [!!python/unicode 'Analizar resultados dos testes de atrito no Gazebo']
 biancamartins:
   atividades: []
   comments: ''
