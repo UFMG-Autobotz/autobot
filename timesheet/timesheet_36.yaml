@@ -26,7 +26,7 @@ biancamartins:
   - [0.5, "Reuni\xE3o eletr\xF4nica"]
   comments: ''
   nome: Bianca Martins
-  planos: []
+  planos: [!!python/unicode ': Terminar layout da HAMS']
 bruno-cerqueira:
   atividades: []
   comments: ''
@@ -67,6 +67,7 @@ pedro:
   atividades:
   - [1.0, "Teste da fia\xE7\xE3o do ultrassom"]
   - [4.0, "Melhorias na plataforma de testes da eletr\xF4nica do futebol"]
+  - [3.0, "Gerar guia de boas pr\xE1ticas em layout de PCB"]
   comments: ''
   nome: Pedro Blanc
   planos: []
