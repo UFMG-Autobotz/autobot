@@ -5,7 +5,14 @@ barbara-almeida:
   - [2.0, "Inventario de itens da sede + verificar devolu\xE7ao de itens"]
   - [20.0, "Seguir tutoriais do Gazebo, pesquisar sobre atrito no Gazebo, estudar\
       \ plugins e conex\xE3o do Gazebo com ROS, fazer testes com atrito no Gazebo"]
-  comments: ''
+  comments: "Depois de ter bastante dificuldade com testes de formas de simula\xE7\
+    \xE3o no barco no fim de semana decidi voltar um pouco atr\xE1s e estudar mais\
+    \ o funcionamento do Gazebo. Aprendi a criar modelos parametriz\xE1veis, a mover\
+    \ objetos por meio de plugins (via velocidade, acelera\xE7\xE3o ou for\xE7a),\
+    \  a pegar informa\xE7\xF5es do modelo (como velocidade e posi\xE7\xE3o),  conectar\
+    \ o plugin com o ROS, salvar os resultados em um arquivo de texto. Usei isso para\
+    \ (apos estudar a forma como o atrito \xE9 modelado no Gazebo) fazer testes de\
+    \ atrito que pretendo analisar graficamente na pr\xF3xima semana."
   nome: "B\xE1rbara Almeida"
   planos: [!!python/unicode 'Analizar resultados dos testes de atrito no Gazebo',
     "Testar diferentes formas de mover objetos no gazebo (imprimir for\xE7a, alterar\
