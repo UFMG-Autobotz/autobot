@@ -22,6 +22,8 @@ barbara-almeida:
 biancamartins:
   atividades:
   - [5.0, !!python/unicode 'Layout da HAMS']
+  - [1.0, "Digitar emails de interessados das aulas de introdu\xE7\xE3o"]
+  - [0.5, "Reuni\xE3o eletr\xF4nica"]
   comments: ''
   nome: Bianca Martins
   planos: []
@@ -64,6 +66,7 @@ marimeireles:
 pedro:
   atividades:
   - [1.0, "Teste da fia\xE7\xE3o do ultrassom"]
+  - [4.0, "Melhorias na plataforma de testes da eletr\xF4nica do futebol"]
   comments: ''
   nome: Pedro Blanc
   planos: []
