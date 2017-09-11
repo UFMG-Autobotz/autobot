@@ -20,7 +20,8 @@ barbara-almeida:
     "Testar diferentes formas de mover objetos no gazebo (imprimir for\xE7a, alterar\
       \ velocidade ou pid / junta ou link)"]
 biancamartins:
-  atividades: []
+  atividades:
+  - [5.0, !!python/unicode 'Layout da HAMS']
   comments: ''
   nome: Bianca Martins
   planos: []
