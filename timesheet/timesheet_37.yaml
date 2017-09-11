@@ -37,6 +37,8 @@ marimeireles:
   atividades:
   - [0.5, !!python/unicode 'doc do que concerne bateria']
   - [0.5, "estudando circuito p/ aumentar a tens\xE3o"]
+  - [4.0, "aprendendo eletr\xF4nica"]
+  - [1.0, !!python/unicode 'criando circuito da ponte H']
   comments: ''
   nome: Mariana Meireles
   planos: []
