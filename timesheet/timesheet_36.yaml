@@ -32,7 +32,8 @@ bruno-cerqueira:
 daniel-leite:
   atividades:
   - [2.5, "Manuten\xE7\xE3o no barco"]
-  comments: ''
+  comments: "\"N\xE3o rendi muito essa semana, em parte devido ao fato de ter viajado\
+    \ e minhas atividades dependerem de estar na sede\""
   nome: Daniel Leite
   planos: [!!python/unicode 'Continuar reparos no barco', "Testar o c\xF3digo de joystick",
     "Continuar documenta\xE7\xE3o da {\\tt Radio.h} e test\xE1-la"]
@@ -70,7 +71,9 @@ renan.cvr:
   nome: Renan Costa
   planos: []
 rodrigo-cezar:
-  atividades: []
+  atividades:
+  - [18.0, "Cria\xE7\xE3o da telemetria do gazebo"]
+  - [3.0, "Pesquisas sobre acionamentos de velocidade e for\xE7a no gazebo"]
   comments: ''
   nome: "Rodrigo C\xE9zar"
   planos: []
