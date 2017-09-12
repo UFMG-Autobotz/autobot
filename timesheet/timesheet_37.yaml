@@ -19,7 +19,8 @@ daniel-leite:
   nome: Daniel Leite
   planos: []
 elisa-bacelar:
-  atividades: []
+  atividades:
+  - [0.5, "Estudo dos samples para desenvolvimento da estrat\xE9gia"]
   comments: ''
   nome: Elisa Bacelar
   planos: []
