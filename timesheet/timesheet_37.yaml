@@ -22,6 +22,7 @@ elisa-bacelar:
   atividades:
   - [0.5, "Estudo dos samples para desenvolvimento da estrat\xE9gia"]
   - [2.5, !!python/unicode 'Resolver erros do pacote Vision no Qt Creator']
+  - [1.0, "Passar partes da estrat\xE9gia em python para c++"]
   comments: ''
   nome: Elisa Bacelar
   planos: []
