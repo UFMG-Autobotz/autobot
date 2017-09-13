@@ -21,6 +21,7 @@ daniel-leite:
 elisa-bacelar:
   atividades:
   - [0.5, "Estudo dos samples para desenvolvimento da estrat\xE9gia"]
+  - [2.5, !!python/unicode 'Resolver erros do pacote Vision no Qt Creator']
   comments: ''
   nome: Elisa Bacelar
   planos: []
