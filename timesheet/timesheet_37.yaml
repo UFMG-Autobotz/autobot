@@ -14,7 +14,8 @@ bruno-cerqueira:
   nome: Bruno Cerqueira
   planos: []
 daniel-leite:
-  atividades: []
+  atividades:
+  - [7.0, "Preparar coisas para a Mostra de Profiss\xF5es"]
   comments: ''
   nome: Daniel Leite
   planos: []
