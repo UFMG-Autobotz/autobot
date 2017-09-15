@@ -25,6 +25,7 @@ elisa-bacelar:
   - [2.5, !!python/unicode 'Resolver erros do pacote Vision no Qt Creator']
   - [1.0, "Passar partes da estrat\xE9gia em python para c++"]
   - [1.0, "Aprimorando estrat\xE9gia em c++ criada durante o trainee"]
+  - [2.0, "Reuni\xE3o - Decis\xF5es sobre o futebol"]
   comments: ''
   nome: Elisa Bacelar
   planos: []
