@@ -74,6 +74,9 @@ renan.cvr:
   atividades:
   - [5.0, "mostra de profiss\xF5es"]
   - [1.5, "reuni\xE3o"]
+  - [4.0, !!python/unicode 'montagem na sexta feira']
+  - [2.0, !!python/unicode 'desenho dos suportes de bateria']
+  - [2.0, !!python/unicode 'montagem final do Inventor']
   comments: ''
   nome: Renan Costa
   planos: []
