@@ -12,7 +12,8 @@ biancamartins:
   nome: Bianca Martins
   planos: ["Terminar layout da HAMS e a instala\xE7\xE3o do galileo"]
 bruno-cerqueira:
-  atividades: []
+  atividades:
+  - [7.0, "desenhos de pe\xE7as e detalhamento no Inventor"]
   comments: ''
   nome: Bruno Cerqueira
   planos: []
