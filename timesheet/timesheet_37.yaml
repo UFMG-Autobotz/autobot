@@ -62,6 +62,8 @@ pedro:
   atividades:
   - [3.5, !!python/unicode 'preparar esteira para mostra']
   - [2.0, "Reuni\xE3o da equipe"]
+  - [2.0, "Resolver quest\xE3o das baterias"]
+  - [3.5, "expor mostra de profiss\xF5es"]
   comments: ''
   nome: Pedro Blanc
   planos: []
