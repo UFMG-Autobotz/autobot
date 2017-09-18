@@ -32,7 +32,9 @@ elisa-bacelar:
   nome: Elisa Bacelar
   planos: []
 jonatan:
-  atividades: []
+  atividades:
+  - [2.0, "Reuni\xE3o Raffo"]
+  - [1.0, !!python/unicode 'Brainstorm da nova plataforma']
   comments: ''
   nome: Jonatan Campos
   planos: []
