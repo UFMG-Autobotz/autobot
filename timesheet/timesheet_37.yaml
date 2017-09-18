@@ -71,7 +71,9 @@ pedro:
   nome: Pedro Blanc
   planos: []
 renan.cvr:
-  atividades: []
+  atividades:
+  - [5.0, "mostra de profiss\xF5es"]
+  - [1.5, "reuni\xE3o"]
   comments: ''
   nome: Renan Costa
   planos: []
