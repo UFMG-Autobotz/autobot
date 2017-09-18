@@ -20,7 +20,7 @@ daniel-leite:
     \ de uma vez. Pode ser que minha produtividade caia nas pr\xF3ximas duas ou tr\xEA\
     s semanas, mas compensarei eventualmente."
   nome: Daniel Leite
-  planos: []
+  planos: ["Documenta\xE7\xE3o e testes na {\\tt Radio.h}"]
 elisa-bacelar:
   atividades:
   - [0.5, "Estudo dos samples para desenvolvimento da estrat\xE9gia"]
@@ -35,6 +35,7 @@ jonatan:
   atividades:
   - [2.0, "Reuni\xE3o Raffo"]
   - [1.0, !!python/unicode 'Brainstorm da nova plataforma']
+  - [3.0, "Mostra de profiss\xF5es"]
   comments: ''
   nome: Jonatan Campos
   planos: []
