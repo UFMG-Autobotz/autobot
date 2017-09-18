@@ -59,7 +59,9 @@ marimeireles:
   nome: Mariana Meireles
   planos: []
 pedro:
-  atividades: []
+  atividades:
+  - [3.5, !!python/unicode 'preparar esteira para mostra']
+  - [2.0, "Reuni\xE3o da equipe"]
   comments: ''
   nome: Pedro Blanc
   planos: []
