@@ -89,4 +89,4 @@ victor-castro:
   - [4.0, "Preparo do display do futebol para a Mostra de Profiss\xF5es"]
   comments: ''
   nome: Victor Castro
-  planos: []
+  planos: [!!python/unicode 'Criar um novo pacote ROS para o VSSS']
