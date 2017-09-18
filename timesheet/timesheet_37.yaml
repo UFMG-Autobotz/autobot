@@ -10,7 +10,7 @@ biancamartins:
   - [2.0, !!python/unicode 'Montagem do stand']
   comments: ''
   nome: Bianca Martins
-  planos: []
+  planos: ["Terminar layout da HAMS e a instala\xE7\xE3o do galileo"]
 bruno-cerqueira:
   atividades: []
   comments: ''
