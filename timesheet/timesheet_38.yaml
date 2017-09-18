@@ -1,5 +1,6 @@
 barbara-almeida:
-  atividades: []
+  atividades:
+  - [1.5, "apresenta\xE7\xE3o na aula de introdu\xE7\xE3o \xE0 engenharia"]
   comments: ''
   nome: "B\xE1rbara Almeida"
   planos: []
