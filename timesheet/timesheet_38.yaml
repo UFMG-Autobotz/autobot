@@ -35,7 +35,8 @@ josuehfa:
   nome: "Josu\xE9 Henrique"
   planos: []
 marimeireles:
-  atividades: []
+  atividades:
+  - [15.0, "trabalhando para a mostra de profiss\xE3o"]
   comments: ''
   nome: Mariana Meireles
   planos: []
