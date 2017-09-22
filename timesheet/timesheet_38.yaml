@@ -22,6 +22,7 @@ daniel-leite:
 elisa-bacelar:
   atividades:
   - [3.5, "Estudo da estrat\xE9gia criada pelos memebros antigos"]
+  - [1.5, !!python/unicode 'Teste do simulador criado pelos membros antigos']
   comments: ''
   nome: Elisa Bacelar
   planos: []
