@@ -20,7 +20,8 @@ daniel-leite:
   nome: Daniel Leite
   planos: []
 elisa-bacelar:
-  atividades: []
+  atividades:
+  - [3.5, "Estudo da estrat\xE9gia criada pelos memebros antigos"]
   comments: ''
   nome: Elisa Bacelar
   planos: []
