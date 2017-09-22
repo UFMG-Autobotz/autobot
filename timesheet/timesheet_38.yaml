@@ -2,6 +2,7 @@ barbara-almeida:
   atividades:
   - [1.5, "apresenta\xE7\xE3o na aula de introdu\xE7\xE3o \xE0 engenharia"]
   - [5.75, !!python/unicode 'modulo para controle do VT via teclado']
+  - [2.0, !!python/unicode 'estudo sobre formas de comunicar Gazebo com rviz']
   comments: ''
   nome: "B\xE1rbara Almeida"
   planos: []
