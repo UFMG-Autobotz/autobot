@@ -33,6 +33,7 @@ elisa-bacelar:
 jonatan:
   atividades:
   - [6.0, !!python/unicode 'Apredendo Python']
+  - [1.0, "Estudo de cinem\xE1tica de rob\xF4s"]
   comments: ''
   nome: Jonatan Campos
   planos: []
