@@ -34,6 +34,8 @@ jonatan:
   atividades:
   - [6.0, !!python/unicode 'Apredendo Python']
   - [1.0, "Estudo de cinem\xE1tica de rob\xF4s"]
+  - [2.0, !!python/unicode 'Leitura de artigos para o VT']
+  - [1.5, "Reuni\xE3o com Josu\xE9 e Renan"]
   comments: ''
   nome: Jonatan Campos
   planos: []
