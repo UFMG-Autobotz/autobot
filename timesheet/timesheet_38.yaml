@@ -71,7 +71,9 @@ rodrigo-cezar:
   nome: "Rodrigo C\xE9zar"
   planos: []
 thiago-lages:
-  atividades: []
+  atividades:
+  - [2.0, "Palestra de apresenta\xE7\xE3o da Autobotz para os calouros"]
+  - [2.0, "Reuni\xE3o MACRO para modelagem do barco"]
   comments: ''
   nome: Thiago Lages
   planos: []
