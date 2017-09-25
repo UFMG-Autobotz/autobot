@@ -66,7 +66,12 @@ renan.cvr:
   nome: Renan Costa
   planos: []
 rodrigo-cezar:
-  atividades: []
+  atividades:
+  - [1.0, "Palestra de apresenta\xE7\xE3o da Autobotz para os calouros"]
+  - [1.0, "Reuni\xE3o da Navega\xE7\xE3o"]
+  - [1.5, "Reuni\xE3o da Equipe"]
+  - [1.0, "Discuss\xF5es sobre Processo seletivo de eletr\xF4nica"]
+  - [15.0, !!python/unicode 'Melhorias na interface de controle/telemetria do gazebo']
   comments: ''
   nome: "Rodrigo C\xE9zar"
   planos: []
