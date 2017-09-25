@@ -76,6 +76,11 @@ thiago-lages:
   - [2.0, "Reuni\xE3o MACRO para modelagem do barco"]
   - [1.0, "Reuni\xE3o Navega\xE7\xE3o"]
   - [2.0, "Reuni\xE3o equipe"]
+  - [5.0, "Leitura a respeito de sistemas rob\xF3ticos e defini\xE7\xF5es formais,\
+      \ procura de livros sobre sistemas lineares, de controle, busca do livro do\
+      \ Fossen sobre modelagem de veiculos aquaticos, in\xEDcio de documentacao que\
+      \ pode vir a ajudar a compreender como o controle do barco deve ser feito, e\
+      \ para futuros membros que possam vir a mexer com isso"]
   comments: ''
   nome: Thiago Lages
   planos: []
