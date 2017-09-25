@@ -12,7 +12,8 @@ biancamartins:
   nome: Bianca Martins
   planos: []
 bruno-cerqueira:
-  atividades: []
+  atividades:
+  - [7.0, "desenho e detalhamento de pe\xE7as no Inventor"]
   comments: ''
   nome: Bruno Cerqueira
   planos: []
