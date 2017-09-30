@@ -22,6 +22,8 @@ elisa-bacelar:
   atividades:
   - [5.5, !!python/unicode 'Conserto do pacote do ROS do vsss de 2014']
   - [1.0, "Reuni\xE3o da navega\xE7\xE3o"]
+  - [1.0, "Reuni\xE3o da equipe"]
+  - [1.0, "Discuss\xF5es sobre o site"]
   comments: ''
   nome: Elisa Bacelar
   planos: []
