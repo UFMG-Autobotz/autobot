@@ -19,7 +19,9 @@ daniel-leite:
   nome: Daniel Leite
   planos: []
 elisa-bacelar:
-  atividades: []
+  atividades:
+  - [5.5, !!python/unicode 'Conserto do pacote do ROS do vsss de 2014']
+  - [1.0, "Reuni\xE3o da navega\xE7\xE3o"]
   comments: ''
   nome: Elisa Bacelar
   planos: []
