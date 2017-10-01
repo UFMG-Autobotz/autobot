@@ -28,7 +28,9 @@ elisa-bacelar:
   nome: Elisa Bacelar
   planos: []
 jonatan:
-  atividades: []
+  atividades:
+  - [6.0, !!python/unicode 'Estudo']
+  - [4.0, !!python/unicode 'Aprendendo Python']
   comments: ''
   nome: Jonatan Campos
   planos: []
