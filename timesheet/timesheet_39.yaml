@@ -31,6 +31,7 @@ jonatan:
   atividades:
   - [6.0, !!python/unicode 'Estudo']
   - [4.0, !!python/unicode 'Aprendendo Python']
+  - [2.0, "Desenho do novo chassi do VT ( vers\xE3o tubular )"]
   comments: ''
   nome: Jonatan Campos
   planos: []
