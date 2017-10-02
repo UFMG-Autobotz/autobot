@@ -57,6 +57,8 @@ renan.cvr:
   atividades:
   - [2.0, !!python/unicode 'desenho chutador']
   - [2.0, !!python/unicode 'aprendendo python']
+  - [1.0, "Altera\xE7\xE3o na placa inferior"]
+  - [2.0, "pesquisa por placas eletr\xF4nicas no Inventor"]
   comments: ''
   nome: Renan Costa
   planos: []
