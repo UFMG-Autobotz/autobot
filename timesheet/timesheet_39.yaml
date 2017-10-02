@@ -69,7 +69,10 @@ thiago-lages:
   nome: Thiago Lages
   planos: []
 victor-castro:
-  atividades: []
+  atividades:
+  - [1.5, "Apresenta\xE7\xE3o na disciplina de Introdu\xE7\xE3o para a turma de Eng.\
+      \ Mec\xE2nica"]
+  - [1.0, "Recupera\xE7\xE3o do primeiro projeto (2014) para VSSS da Autobotz"]
   comments: ''
   nome: Victor Castro
   planos: []
