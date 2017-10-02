@@ -64,7 +64,8 @@ rodrigo-cezar:
   nome: "Rodrigo C\xE9zar"
   planos: []
 thiago-lages:
-  atividades: []
+  atividades:
+  - [3.0, "Reuni\xE3o capit\xE3es equipes de competicao"]
   comments: ''
   nome: Thiago Lages
   planos: []
