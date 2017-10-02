@@ -73,6 +73,10 @@ thiago-lages:
   - [3.0, "Reuni\xE3o capit\xE3es equipes de competicao"]
   - [1.0, "Reuni\xE3o Navegacao"]
   - [2.0, !!python/unicode 'Reuniao Equipe']
+  - [6.0, "Pesquisa sobre conceitos de sistemas rob\xF3ticos e de controle no geral,\
+      \ lendo o artigo e relacionando com alguns desses conteitos. Come\xE7o da leitura\
+      \ de anexos do livro do Fossen sobre controle de embarca\xE7\xF5es no geral,\
+      \ e leve consulta ao livro de controle digital"]
   comments: ''
   nome: Thiago Lages
   planos: []
