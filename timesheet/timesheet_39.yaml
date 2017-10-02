@@ -54,7 +54,9 @@ pedro:
   nome: Pedro Blanc
   planos: []
 renan.cvr:
-  atividades: []
+  atividades:
+  - [2.0, !!python/unicode 'desenho chutador']
+  - [2.0, !!python/unicode 'aprendendo python']
   comments: ''
   nome: Renan Costa
   planos: []
@@ -66,6 +68,8 @@ rodrigo-cezar:
 thiago-lages:
   atividades:
   - [3.0, "Reuni\xE3o capit\xE3es equipes de competicao"]
+  - [1.0, "Reuni\xE3o Navegacao"]
+  - [2.0, !!python/unicode 'Reuniao Equipe']
   comments: ''
   nome: Thiago Lages
   planos: []
