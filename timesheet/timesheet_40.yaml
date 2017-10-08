@@ -86,7 +86,8 @@ thiago-lages:
   nome: Thiago Lages
   planos: []
 victor-castro:
-  atividades: []
+  atividades:
+  - [2.0, !!python/unicode 'Teste do V-REP + ROS Indigo']
   comments: ''
   nome: Victor Castro
   planos: []
