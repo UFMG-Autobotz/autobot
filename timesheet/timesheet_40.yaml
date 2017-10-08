@@ -89,6 +89,7 @@ victor-castro:
   atividades:
   - [2.0, !!python/unicode 'Teste do V-REP + ROS Indigo']
   - [4.0, !!python/unicode 'Tentativa de integrar V-REP + ROS Kinetic']
-  comments: ''
+  - [2.0, "Decis\xE3o de continuar com o projeto antigo do VSSS"]
+  comments: !!python/unicode ''
   nome: Victor Castro
   planos: []
