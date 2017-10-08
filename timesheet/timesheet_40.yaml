@@ -13,7 +13,19 @@ barbara-almeida:
       \ do futebol, descobrir como adicionar textura \xE0 parte superior do rob\xF4\
       , teste com os plugins gen\xE9ricos desenvolvidos anteriormente para controle\
       \ das rodas e receber imagem da c\xE2mera)"]
-  comments: ''
+  comments: ": Para esta semana estava planejado iniciar o controle do barco, para\
+    \ isso estudei um pouco sobre controle durante a semana e na sexta-feira eu, o\
+    \ Rodrigo e o Thiago nos reunimos para discutir o que estudamos e como faremos\
+    \ o controle. \nComo nao consegui terminar os plugins que estavam planejados para\
+    \ a semana passada, tamb\xE9m continuei trabalhando com o Gazebo essa semana,\
+    \ ainda esta faltando terminar o plugin para receber infoma\xE7oes sobre links\
+    \ e terminar as documenta\xE7\xF5es.\nComo houve problemas para utilizar a simula\xE7\
+    \xE3o antiga do futebol (feita no V-Rep), tamb\xE9m testei a possibilidade de\
+    \ se utilizar o Gazebo para simular o futebol. Ja \xE9 poss\xEDvel projetar a\
+    \ simula\xE7\xE3o do futebol com o que temos at\xE9 agora, mas eu quero tentar\
+    \ mudar a textura da tag do rob\xF4 via plugin (para conseguir adicionar 6 inst\xE2\
+    ncias do mesmo modelo e modificar apenas a tag, ao inv\xE9s de criar 6 modelos\
+    \ com apenas a tag de diferen\xE7a)"
   nome: "B\xE1rbara Almeida"
   planos: []
 biancamartins:
