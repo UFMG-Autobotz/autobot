@@ -27,7 +27,8 @@ barbara-almeida:
     ncias do mesmo modelo e modificar apenas a tag, ao inv\xE9s de criar 6 modelos\
     \ com apenas a tag de diferen\xE7a)"
   nome: "B\xE1rbara Almeida"
-  planos: []
+  planos: [!!python/unicode ': Terminar plugins do Gazebo', ": Terminar documenta\xE7\
+      ao dos plugins"]
 biancamartins:
   atividades: []
   comments: ''
