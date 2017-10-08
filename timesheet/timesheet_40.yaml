@@ -7,6 +7,8 @@ barbara-almeida:
       \ o ROS"]
   - [2.0, "Inicio da documenta\xE7ao do plugin para controle de juntas (finalizado\
       \ na semana anterior)"]
+  - [2.0, "Inicio do desenvolvimento de plugin para receber informa\xE7oes sobre links\
+      \ no Gazebo"]
   comments: ''
   nome: "B\xE1rbara Almeida"
   planos: []
