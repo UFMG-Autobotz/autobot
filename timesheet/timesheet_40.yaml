@@ -28,7 +28,8 @@ barbara-almeida:
     \ com apenas a tag de diferen\xE7a)"
   nome: "B\xE1rbara Almeida"
   planos: [!!python/unicode ': Terminar plugins do Gazebo', ": Terminar documenta\xE7\
-      ao dos plugins"]
+      ao dos plugins", !!python/unicode ':Estudar controle', !!python/unicode ':Criar
+      modelo simplificado do barco no Gazebo']
 biancamartins:
   atividades: []
   comments: ''
