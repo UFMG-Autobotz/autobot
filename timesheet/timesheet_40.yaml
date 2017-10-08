@@ -2,6 +2,7 @@ barbara-almeida:
   atividades:
   - [8.0, !!python/unicode 'Estudar controle']
   - [3.0, !!python/unicode 'Reuniao sobre controle do barco']
+  - [1.0, !!python/unicode 'Calculos para controle de versao simplificada do barco']
   comments: ''
   nome: "B\xE1rbara Almeida"
   planos: []
