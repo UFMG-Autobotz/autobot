@@ -90,6 +90,7 @@ victor-castro:
   - [2.0, !!python/unicode 'Teste do V-REP + ROS Indigo']
   - [4.0, !!python/unicode 'Tentativa de integrar V-REP + ROS Kinetic']
   - [2.0, "Decis\xE3o de continuar com o projeto antigo do VSSS"]
+  - [2.5, "Manuten\xE7\xE3o dos computadores (meu e da Elisa)"]
   comments: "Foi decidido abandonar o projeto antigo devido a falta de documenta\xE7\
     \xE3o e erros de compatibilidade com novas vers\xF5es do ROS e do V-REP"
   nome: Victor Castro
