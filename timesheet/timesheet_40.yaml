@@ -88,6 +88,7 @@ thiago-lages:
 victor-castro:
   atividades:
   - [2.0, !!python/unicode 'Teste do V-REP + ROS Indigo']
+  - [4.0, !!python/unicode 'Tentativa de integrar V-REP + ROS Kinetic']
   comments: ''
   nome: Victor Castro
   planos: []
