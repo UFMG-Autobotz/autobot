@@ -9,6 +9,10 @@ barbara-almeida:
       \ na semana anterior)"]
   - [2.0, "Inicio do desenvolvimento de plugin para receber informa\xE7oes sobre links\
       \ no Gazebo"]
+  - [2.0, "Testes para simula\xE7\xE3o do futebol no Gazebo (projeto de rob\xF4 simples\
+      \ do futebol, descobrir como adicionar textura \xE0 parte superior do rob\xF4\
+      , teste com os plugins gen\xE9ricos desenvolvidos anteriormente para controle\
+      \ das rodas e receber imagem da c\xE2mera)"]
   comments: ''
   nome: "B\xE1rbara Almeida"
   planos: []
