@@ -3,6 +3,10 @@ barbara-almeida:
   - [8.0, !!python/unicode 'Estudar controle']
   - [3.0, !!python/unicode 'Reuniao sobre controle do barco']
   - [1.0, !!python/unicode 'Calculos para controle de versao simplificada do barco']
+  - [3.0, "Desenvolvimento de plugin para comunica\xE7ao da c\xE2mera do Gazebo com\
+      \ o ROS"]
+  - [2.0, "Inicio da documenta\xE7ao do plugin para controle de juntas (finalizado\
+      \ na semana anterior)"]
   comments: ''
   nome: "B\xE1rbara Almeida"
   planos: []
