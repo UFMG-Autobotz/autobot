@@ -71,7 +71,9 @@ pedro:
   nome: Pedro Blanc
   planos: []
 renan.cvr:
-  atividades: []
+  atividades:
+  - [3.0, "altera\xE7\xF5es e melhoria no desenho do chutador"]
+  - [2.0, "desenho de placas eletr\xF4nicas"]
   comments: ''
   nome: Renan Costa
   planos: []
