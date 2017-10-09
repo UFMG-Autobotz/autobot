@@ -86,7 +86,9 @@ rodrigo-cezar:
   nome: "Rodrigo C\xE9zar"
   planos: []
 thiago-lages:
-  atividades: []
+  atividades:
+  - [3.0, "Leitura e v\xEDdeos sobre espa\xE7os de estados"]
+  - [3.0, "Leitura e v\xEDdeos sobre modelagens de sistemas f\xEDsicos"]
   comments: ''
   nome: Thiago Lages
   planos: []
