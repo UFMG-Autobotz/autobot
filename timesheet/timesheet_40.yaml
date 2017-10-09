@@ -74,6 +74,8 @@ renan.cvr:
   atividades:
   - [3.0, "altera\xE7\xF5es e melhoria no desenho do chutador"]
   - [2.0, "desenho de placas eletr\xF4nicas"]
+  - [2.0, "corre\xE7\xF5es em medidas"]
+  - [1.0, !!python/unicode 'Aprendendo Python']
   comments: ''
   nome: Renan Costa
   planos: []
