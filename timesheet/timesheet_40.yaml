@@ -76,7 +76,8 @@ renan.cvr:
   - [2.0, "desenho de placas eletr\xF4nicas"]
   - [2.0, "corre\xE7\xF5es em medidas"]
   - [1.0, !!python/unicode 'Aprendendo Python']
-  comments: ''
+  comments: !!python/unicode 'Fiquei doente na sexta, o que prejudicou o cumprimento
+    das 12 horas semanais'
   nome: Renan Costa
   planos: []
 rodrigo-cezar:
