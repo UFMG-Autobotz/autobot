@@ -3,6 +3,8 @@ barbara-almeida:
   - [1.5, "Reuniao da navega\xE7ao"]
   - [1.5, !!python/unicode 'Reuniao do controle do barco']
   - [1.5, !!python/unicode 'Adicionar textura ao campo do futebol']
+  - [5.0, "Cria\xE7ao de plugin para mudar a tag dos rob\xF4s"]
+  - [3.0, "Modifica\xE7ao do rob\xF4 do futebol para adicionar chutador gen\xE9rico"]
   comments: ''
   nome: "B\xE1rbara Almeida"
   planos: []
