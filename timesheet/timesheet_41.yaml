@@ -12,7 +12,7 @@ barbara-almeida:
     \ necessario para as simula\xE7\xF5es iniciais."
   nome: "B\xE1rbara Almeida"
   planos: [":Configurar simula\xE7ao do barco no Gazebo", ":Testar controle do barco\
-      \ na simula\xE7ao"]
+      \ na simula\xE7ao", !!python/unicode ':Terminar plugins do Gazebo']
 biancamartins:
   atividades: []
   comments: ''
