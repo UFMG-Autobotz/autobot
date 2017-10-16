@@ -5,6 +5,7 @@ barbara-almeida:
   - [1.5, !!python/unicode 'Adicionar textura ao campo do futebol']
   - [5.0, "Cria\xE7ao de plugin para mudar a tag dos rob\xF4s"]
   - [3.0, "Modifica\xE7ao do rob\xF4 do futebol para adicionar chutador gen\xE9rico"]
+  - [1.0, "Reuniao com o Victor e Rodrigo sobre simula\xE7ao do futebol no Gazebo"]
   comments: ":Nesta semana terminei as configura\xE7\xF5es necess\xE1rias para que\
     \ a Elisa e o Victor comecem a simular o futebol.\nNa proxima semana pretendo\
     \ configurar a simula\xE7ao do barco para testarmos formas iniciais de controle\
