@@ -19,7 +19,10 @@ daniel-leite:
   nome: Daniel Leite
   planos: []
 elisa-bacelar:
-  atividades: []
+  atividades:
+  - [8.0, !!python/unicode 'Estudando sobre simuladores e seguindo os tutoriais de
+      Gazebo']
+  - [1.0, "Reuni\xE3o da navega\xE7\xE3o"]
   comments: ''
   nome: Elisa Bacelar
   planos: []
