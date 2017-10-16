@@ -2,6 +2,7 @@ barbara-almeida:
   atividades:
   - [1.5, "Reuniao da navega\xE7ao"]
   - [1.5, !!python/unicode 'Reuniao do controle do barco']
+  - [1.5, !!python/unicode 'Adicionar textura ao campo do futebol']
   comments: ''
   nome: "B\xE1rbara Almeida"
   planos: []
