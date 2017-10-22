@@ -24,7 +24,11 @@ elisa-bacelar:
   nome: Elisa Bacelar
   planos: []
 jonatan:
-  atividades: []
+  atividades:
+  - [6.0, !!python/unicode 'Desenho do novo chassi do VT']
+  - [2.0, "Aplicando comando de solda no Inventor e relat\xF3rio de solda"]
+  - [10.0, !!python/unicode 'Estudando solda e aprendendo comando de solda no inventor']
+  - [1.5, "Reuni\xE3o com o Raffo"]
   comments: ''
   nome: Jonatan Campos
   planos: []
