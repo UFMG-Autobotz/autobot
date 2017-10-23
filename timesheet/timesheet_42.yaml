@@ -55,6 +55,7 @@ renan.cvr:
   - [2.0, !!python/unicode 'pesquisa por chassis sem roda passiva']
   - [1.5, !!python/unicode 'pesquisa por modelos de rodas passivas']
   - [2.0, !!python/unicode 'redimensionamento do chutador']
+  - [1.5, "esbo\xE7o das pe\xE7as em autoCAD"]
   comments: ''
   nome: Renan Costa
   planos: []
