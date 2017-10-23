@@ -51,6 +51,7 @@ renan.cvr:
   atividades:
   - [2.0, "montagem do prot\xF3tipo do VSS"]
   - [1.5, "Reuni\xE3o da equipe"]
+  - [2.0, !!python/unicode 'aprendendo Python']
   comments: ''
   nome: Renan Costa
   planos: []
