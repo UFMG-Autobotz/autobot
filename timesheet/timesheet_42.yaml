@@ -48,7 +48,9 @@ pedro:
   nome: Pedro Blanc
   planos: []
 renan.cvr:
-  atividades: []
+  atividades:
+  - [2.0, "montagem do prot\xF3tipo do VSS"]
+  - [1.5, "Reuni\xE3o da equipe"]
   comments: ''
   nome: Renan Costa
   planos: []
